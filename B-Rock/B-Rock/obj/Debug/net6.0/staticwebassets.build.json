@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OQPQGJpJlP6ybvubdiHFAeyb6QibZvhI93/84PtEhAo=",
+  "Hash": "3DILutezkmqfJvLP5GtIiQEiBqX7J7zBp7KZGZDkMzE=",
   "Source": "B-Rock",
   "BasePath": "_content/B-Rock",
   "Mode": "Default",
@@ -1154,6 +1154,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Nationale-Loterij.png"
+    },
+    {
+      "Identity": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\noImage.png",
+      "SourceId": "B-Rock",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\",
+      "BasePath": "_content/B-Rock",
+      "RelativePath": "img/noImage.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\noImage.png"
     },
     {
       "Identity": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Stad-Gent.png",

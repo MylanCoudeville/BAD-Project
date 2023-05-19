@@ -15,6 +15,8 @@ namespace B_Rock.Controllers
 
         public IActionResult Index()
         {
+            //TODO: Carousel implementeren
+            //https://getbootstrap.com/docs/4.0/components/carousel/
             return View();
         }
 

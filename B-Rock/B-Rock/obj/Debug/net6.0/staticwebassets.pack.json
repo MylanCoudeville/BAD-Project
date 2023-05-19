@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\img\\Vlaanderen.png"
     },
     {
+      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\noImage.png",
+      "PackagePath": "staticwebassets\\img\\noImage.png"
+    },
+    {
       "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
