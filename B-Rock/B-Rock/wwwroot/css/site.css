@@ -16,3 +16,69 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/*By student Mylan Coudeville*/
+/*Nav*/
+.nav-link {
+    font-size: 1.4rem
+}
+/*Footer*/
+.footer_informatie {
+    min-width: 300px;
+    max-width: 300px;
+    padding-bottom: 1.5625rem;
+    padding-top: 1.5625rem;
+    text-align: center;
+}
+
+/*General*/
+/*h2's*/
+h2 {
+    border-bottom-left-radius: 1.5625rem;
+    border-top-right-radius: 1.5625rem;
+    border: solid 0.3125rem black;
+    margin-bottom: 1.5625rem;
+    margin-left: 0.625rem;
+    margin-top: 1.5625rem;
+    padding-bottom: 0.1875rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: fit-content;
+}
+/*h3's*/
+h3 {
+    border-bottom-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    border: solid 0.3125rem black;
+    margin-bottom: 0.9375rem;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    margin-top: 0.9375rem;
+    padding-bottom: 0.1875rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: fit-content;
+}
+/*links*/
+a{
+    text-decoration: none;
+    color: black;
+}
+footer a {
+    color: #6c757d;
+}
+/*Images*/
+.backgroundImageGroup {
+    background-image: url(../img/BackgroundImageArtists.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 6.25rem;
+    border-top-right-radius: 6.25rem;
+    height: 37.5rem;
+    width: 100%;
+}
+.footer_sponser {
+    align-items: center;
+    margin-left: 0.5rem;
+    max-width: 30%;
+}
