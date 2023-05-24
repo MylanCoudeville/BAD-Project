@@ -1,22 +1,29 @@
-﻿<h3>Team</h3>
+﻿@model List<B_Rock.Data.Staff>
+<h3>Team</h3>
 
-<div class="d-flex flex-wrap">
-    <div class="card mb-3" style="max-width: 540px; margin-right: 25px">
-        <div class="row g-0">
-            <div class="col-md-4 cover" style="background-image: url('/img/GeneralArtist.jpg')"></div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">Name Artist</h5>
-                    <p class="card-text">Role</p>
-                    <p class="card-text">Mail</p>
-                    <p class="card-text">Phone?</p>
-                    <div class="d-flex justify-content-between align-self-end">
-                        <a class="btn btn-primary" asp-action="EditBook" asp-controller="Book" asp-route-Id="book.Id">Edit</a>
+<div class="d-flex flex-wrap justify-content-center">
+    @foreach (B_Rock.Data.Staff staffMember in Model)
+    {
+        <div class="card mb-9" style="width: 300px; margin: 25px; min-height: 480px;">
+            <div class="row g-0">
+                <div class="col-md-4 coverUp" style="background-image: url('/img/Staff/@staffMember.UniqueURL')"></div>
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h5 class="card-title">@staffMember.FirstName @staffMember.LastName</h5>
+                        <p class="card-text">@staffMember.Role</p>
+                        <p class="card-text"><a href="mailto:@staffMember.Email">@staffMember.Email</a></p>
+                        @if (staffMember.PhoneNumber != null)
+                        {
+                            <p class="card-text">@staffMember.PhoneNumber</p>
+                        }
+                        <div class="d-flex justify-content-between align-self-end">
+                            <a class="btn btn-primary" asp-action="EditBook" asp-controller="Contact" asp-route-Id="@staffMember.Id">Edit</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    }
 </div>
 
 <h3>General</h3>

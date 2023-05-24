@@ -14,6 +14,7 @@ namespace B_Rock.Data
         [Required(ErrorMessage = "Please, fill in the last name of the artist.")]
         public string LastName { get; set; }
         public string? Role { get; set; }
+        [ForeignKey("Instrument")]
         public int InstrumentId { get; set; }
         public Instrument? Instrument { get; set; }
         [NotMapped]

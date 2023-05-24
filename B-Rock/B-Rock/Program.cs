@@ -1,4 +1,5 @@
 using B_Rock.Data;
+using B_Rock.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,6 +12,9 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IArtistService, ArtistService>();
+builder.Services.AddScoped<IInstrumentService, InstrumentService>();
+builder.Services.AddScoped<IStaffService, StaffService>();
 
 var app = builder.Build();
 
