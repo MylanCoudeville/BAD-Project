@@ -1,0 +1,81 @@
+﻿<h3>Team</h3>
+
+<div class="d-flex flex-wrap">
+    <div class="card mb-3" style="max-width: 540px; margin-right: 25px">
+        <div class="row g-0">
+            <div class="col-md-4 cover" style="background-image: url('/img/GeneralArtist.jpg')"></div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Name Artist</h5>
+                    <p class="card-text">Role</p>
+                    <p class="card-text">Mail</p>
+                    <p class="card-text">Phone?</p>
+                    <div class="d-flex justify-content-between align-self-end">
+                        <a class="btn btn-primary" asp-action="EditBook" asp-controller="Book" asp-route-Id="book.Id">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3>General</h3>
+<div class="main_algemeen">
+    <address class="main_gegevens">
+        <div class="adres">
+            <p>Adres</p>
+            <p>Bijlokekaai 7c, 9000 Ghent</p>
+        </div>
+        <div class="telefoonnummer">
+            <p>Phone number</p>
+            <p><a href="tel:+3293358797">+32 9 335 87 97</a></p>
+        </div>
+        <div class="btw">
+            <p>VAT</p>
+            <p>BE 0873 809 751</p>
+        </div>
+        <div class="bankrekening">
+            <p>Bank</p>
+            <p>IBAN: BE78 7370 3138 3886<br>BIC: KREDBEBB</p>
+        </div>
+    </address>
+    <div class="main_maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2109.3968906947216!2d3.7178062382058124!3d51.04367405821497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3715cbb166cd7%3A0xc76590d86cd18cd4!2sB&#39;ROCK%20ORCHESTRA!5e0!3m2!1snl!2sbe!4v1684918477644!5m2!1snl!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+<div class="d-flex">
+    <form style="min-width:50%">
+        <h3>Contact</h3>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">First name</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="Jan">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Last name</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="Jansens">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-6">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="jan.jansens@gmail.com">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Bericht" class="col-sm-2 col-form-label">Message</label>
+            <div class="col-sm-6">
+                <textarea class="form-control" id="inputEmail3" rows="4"></textarea>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Verstuur" class="col-sm-2"></label>
+            <div class="col-sm-6">
+                <input id="Verstuur" class="button" type="submit" value="Send">
+            </div>
+        </div>
+    </form>
+    <div class="cover" style="background-image: url(img/Contrabasisten.jpg); min-height: 20rem; min-width:50%;"></div>
+</div>

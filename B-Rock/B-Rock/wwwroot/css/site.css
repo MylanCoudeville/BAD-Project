@@ -89,9 +89,69 @@ footer a {
 }
 
 /*Specific parts*/
-/*artiesten*/
+/*artiests*/
 main .main_titel_artiest {
     font-size: 1.25rem;
     font-weight: bold;
     text-align: left;
+}
+/*gegevens orkest*/
+.adres, .telefoonnummer, .btw, .bankrekening {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_gegevens {
+    min-width: 40%;
+}
+
+.main_gegevens .adres p:last-child {
+    font-size: 0.875rem;
+}
+
+.main_gegevens .telefoonnummer p:last-child {
+    font-size: 1rem;
+}
+@media (min-width: 890px) {
+    .main_algemeen {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main_maps iframe {
+        width: 100%;
+    }
+}
+@media (min-width: 375px) {
+    .main_gegevens .adres p:last-child,
+    .main_gegevens .telefoonnummer p:last-child,
+    .main_gegevens .bankrekening p:last-child {
+        font-size: 0.9375rem;
+    }
+}
+/*maps*/
+.main_maps {
+    min-width: 50%;
+}
+
+.main_maps iframe {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.main_gegevens .bankrekening p:last-child {
+    font-size: 0.625rem;
+    text-align: right;
+}
+
+/*Button*/
+.button{
+    min-width: 100%;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    margin-top: 1rem;
 }
