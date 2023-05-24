@@ -77,8 +77,21 @@ footer a {
     height: 37.5rem;
     width: 100%;
 }
+.cover {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
 .footer_sponser {
     align-items: center;
     margin-left: 0.5rem;
     max-width: 30%;
+}
+
+/*Specific parts*/
+/*artiesten*/
+main .main_titel_artiest {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: left;
 }
