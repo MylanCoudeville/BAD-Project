@@ -13,6 +13,7 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IArtistService, ArtistService>();
+builder.Services.AddScoped<IConcertService, ConcertService>();
 builder.Services.AddScoped<IInstrumentService, InstrumentService>();
 builder.Services.AddScoped<IStaffService, StaffService>();
 
