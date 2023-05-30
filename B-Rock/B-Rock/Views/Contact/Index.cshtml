@@ -1,6 +1,9 @@
 ﻿@model List<B_Rock.Data.Staff>
 <h3>Team</h3>
-<a class="btn btn-primary" asp-action="AddStaff" asp-controller="Contact">New staff-member</a>
+<div class="d-flex justify-content-center">
+    <a class="btn btn-primary" asp-action="AddStaff" asp-controller="Contact">New staff-member</a>
+</div>
+
 <div class="d-flex flex-wrap justify-content-center">
     @foreach (B_Rock.Data.Staff staffMember in Model)
     {
@@ -17,7 +20,8 @@
                             <p class="card-text">@staffMember.PhoneNumber</p>
                         }
                         <div class="d-flex justify-content-between align-self-end">
-                            <a class="btn btn-primary" asp-action="EditBook" asp-controller="Contact" asp-route-Id="@staffMember.Id">Edit</a>
+                            <a class="btn btn-primary" asp-action="EditStaff" asp-controller="Contact" asp-route-Id="@staffMember.Id">Edit</a>
+                            <a type="submit" value="Remove" class="btn btn-danger d-inline" asp-action="DeleteStaff" asp-controller="Contact" asp-route-Id="@staffMember.Id">Remove</a>
                         </div>
                     </div>
                 </div>

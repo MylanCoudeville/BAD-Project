@@ -1,0 +1,52 @@
+﻿@model B_Rock.Models.Contact.DeleteStaffViewModel
+
+@{
+    ViewData["Title"] = "DeleteStaff";
+}
+
+<h1>Delete staffmember</h1>
+
+<div>
+    <h4>Are you sure you want to delete @Model.FirstName @Model.LastName?</h4>
+    <hr />
+    <div class="d-flex flex-nowrap d-flex align-self-start">
+        <img src="~/img/Staff/@Model.UniqueURL" style="max-width: 250px; margin-right: 105px;" />
+        <dl class="row">
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.FirstName)
+                <input type="hidden" asp-for="FirstName"/>
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.FirstName)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.LastName)
+                <input type="hidden" asp-for="LastName" />
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.LastName)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Role)
+                <input type="hidden" asp-for="Role" />
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Role)
+            </dd>
+            <dt class="col-sm-3">
+                <input type="hidden" asp-for="UniqueURL" />
+                <input type="hidden" asp-for="Id" />
+            </dt>
+            <dd class="col-sm-9">
+                <form class="d-inline" asp-action="DeleteStaff" asp-controller="Contact">
+                    <input type="submit" value="Delete" class="btn btn-danger" />
+                </form>
+            </dd>
+        </dl>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

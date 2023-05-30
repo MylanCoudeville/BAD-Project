@@ -16,6 +16,12 @@ namespace B_Rock.Services
             _dbContext.SaveChanges();
         }
 
+        public void Delete(Staff staff)
+        {
+            _dbContext.Staff.Remove(staff);
+            _dbContext.SaveChanges();
+        }
+
         public IEnumerable<Staff> GetAll()
         {
             return _dbContext.Staff.Select(s => new Staff
@@ -28,6 +34,17 @@ namespace B_Rock.Services
                 PhoneNumber = s.PhoneNumber,
                 UniqueURL = s.UniqueURL
             }).ToList();
+        }
+
+        public Staff GetById(int id)
+        {
+            return _dbContext.Staff.Where(s => s.Id == id).FirstOrDefault();
+        }
+
+        public void Update(Staff staff)
+        {
+            _dbContext.Update(staff);
+            _dbContext.SaveChanges();
         }
     }
 }
