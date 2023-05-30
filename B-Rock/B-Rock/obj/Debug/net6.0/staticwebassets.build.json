@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cd0DeSf/EkModKU3CBy+qVt5xxNppLYOnEt67GT1KWI=",
+  "Hash": "qG8gDmt0aNRdju31UTH2QsJAcImDLB1Ptvs5mWX3LQA=",
   "Source": "B-Rock",
   "BasePath": "_content/B-Rock",
   "Mode": "Default",
@@ -1953,6 +1953,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Staff\\Mylan-Coudeville_4f66_a2ef.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Mylan-Coudeville_4f66_fbd5.jpg",
+      "SourceId": "B-Rock",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\",
+      "BasePath": "_content/B-Rock",
+      "RelativePath": "img/Staff/Mylan-Coudeville_4f66_fbd5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Staff\\Mylan-Coudeville_4f66_fbd5.jpg"
     },
     {
       "Identity": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Sharon-Buffel.jpg",

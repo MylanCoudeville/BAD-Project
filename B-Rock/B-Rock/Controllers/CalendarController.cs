@@ -17,5 +17,10 @@ namespace B_Rock.Controllers
             IEnumerable<Concert> concerts = _concertService.GetAll();
             return View(concerts);
         }
+        public IActionResult EditConcert(int Id)
+        {
+            Concert c = _concertService.GetById(Id);
+            //TODO: doe hier verder ben nu te moe...
+        }
     }
 }

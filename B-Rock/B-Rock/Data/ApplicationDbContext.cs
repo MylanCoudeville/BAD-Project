@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using static System.Net.WebRequestMethods;
 
 namespace B_Rock.Data
 {
@@ -74,10 +75,10 @@ namespace B_Rock.Data
                 new Staff() { Id = 8, FirstName = "Laurent", LastName = "Langlois", Role = "International Relations", Email = "laurent@b-rock.org", PhoneNumber = "+33 610 27 11 38", UniqueURL = "Laurent-Langlois.jpg" }
                 );
             builder.Entity<Concert>().HasData(
-                new Concert() { Id = 1, Title = "Mozart Mass", PerformedBy = "Haydn & Mozart with Vox Luminis XL", Location = "De Singel", City = "Antwerp", Country = "BE", DateAndTime = new DateTime(2023, 5, 25, 20, 00, 00), UniqueURL = "Mozart-Mass.jpg" },
-                new Concert() { Id = 2, Title = "Tears Of Melancholy", PerformedBy = "Antoine Tamestit & B'Rock", Location = "Chapelle Corneille", City = "Rouen", Country = "FR", DateAndTime = new DateTime(2023, 6, 1, 20, 00, 00), UniqueURL = "Tears-Of-Melancholy.jpg" },
-                new Concert() { Id = 3, Title = "The Travels Of Monteverdi", PerformedBy = "B’Rock Orchestra & Vocal Consort", Location = "The German Church", City = "Stockholm", Country = "SE", DateAndTime = new DateTime(2023, 6, 2, 20, 00, 00), UniqueURL = "The-Travels-Of-Monteverdi.jpg" },
-                new Concert() { Id = 4, Title = "Un Nouveau Vent", PerformedBy = "Fin de siècle à Paris", Location = "Opéra de Raims", City = "Reims", Country = "FR", DateAndTime = new DateTime(2023, 6, 24, 20, 00, 00), UniqueURL = "Un-Nouveau-Vent.jpg" }
+                new Concert() { Id = 1, Title = "Mozart Mass", PerformedBy = "Haydn & Mozart with Vox Luminis XL", Location = "De Singel", City = "Antwerp", Country = "BE", DateAndTime = new DateTime(2023, 5, 25, 20, 00, 00), UniqueURL = "Mozart-Mass.jpg", ExternLink = "https://b-rock.org/project/mozart-mass-3/" },
+                new Concert() { Id = 2, Title = "Tears Of Melancholy", PerformedBy = "Antoine Tamestit & B'Rock", Location = "Chapelle Corneille", City = "Rouen", Country = "FR", DateAndTime = new DateTime(2023, 6, 1, 20, 00, 00), UniqueURL = "Tears-Of-Melancholy.jpg", ExternLink = "https://b-rock.org/project/tears-of-melancholy-2/" },
+                new Concert() { Id = 3, Title = "The Travels Of Monteverdi", PerformedBy = "B’Rock Orchestra & Vocal Consort", Location = "The German Church", City = "Stockholm", Country = "SE", DateAndTime = new DateTime(2023, 6, 2, 20, 00, 00), UniqueURL = "The-Travels-Of-Monteverdi.jpg", ExternLink = "https://b-rock.org/project/monteverdis-journey/" },
+                new Concert() { Id = 4, Title = "Un Nouveau Vent", PerformedBy = "Fin de siècle à Paris", Location = "Opéra de Raims", City = "Reims", Country = "FR", DateAndTime = new DateTime(2023, 6, 24, 20, 00, 00), UniqueURL = "Un-Nouveau-Vent.jpg", ExternLink = "https://b-rock.org/project/un-nouveau-vent/" }
                 );
         }
         public DbSet<Artist> Artists { get; set; }
