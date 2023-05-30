@@ -1,4 +1,5 @@
-﻿using B_Rock.Models.About;
+﻿using B_Rock.Data;
+using B_Rock.Models.About;
 using B_Rock.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,6 +23,26 @@ namespace B_Rock.Controllers
                 ArtistsInGroup.artistsInGroups.Add(_artistService.GetByInstrument(i).ToList());
             }
             return View(ArtistsInGroup);
+        }
+        
+        public IActionResult AddArtist() {
+            AddArtistViewModel viewModel = new AddArtistViewModel() { Instruments = _instrumentService.GetAll() };
+            return View(viewModel); 
+        }
+        //TODO: Post van nieuw artist
+        public IActionResult EditArtist(int id) {
+            Artist a = _artistService.GetById(id);
+            EditArtistViewModel viewModel = new EditArtistViewModel()
+            {
+                Instruments = _instrumentService.GetAll(),
+                Id = a.Id,
+                FirstName = a.FirstName,
+                LastName = a.LastName,
+                Role = a.Role,
+                InstrumentId = a.InstrumentId,
+                UniqueURL = a.UniqueURL
+            };
+            return View(viewModel);
         }
     }
 }

@@ -10,6 +10,15 @@ namespace B_Rock.Services
             _dbContext = dbContext;
         }
 
+        public IEnumerable<Instrument> GetAll()
+        {
+            return _dbContext.Instruments.Select(i => new Instrument
+            {
+                Id = i.Id,
+                Name = i.Name
+            });
+        }
+
         public int GetAmountInstruments()
         {
             return _dbContext.Instruments.Max(i => i.Id);
