@@ -5,5 +5,6 @@ namespace B_Rock.Services
     public interface IStaffService
     {
         public IEnumerable<Staff> GetAll();
+        public void Add(Staff staff);
     }
 }

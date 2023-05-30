@@ -1,6 +1,6 @@
 ﻿@model List<B_Rock.Data.Staff>
 <h3>Team</h3>
-
+<a class="btn btn-primary" asp-action="AddStaff" asp-controller="Contact">New staff-member</a>
 <div class="d-flex flex-wrap justify-content-center">
     @foreach (B_Rock.Data.Staff staffMember in Model)
     {

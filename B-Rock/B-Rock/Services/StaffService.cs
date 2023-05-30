@@ -10,6 +10,12 @@ namespace B_Rock.Services
             _dbContext = dbContext;
         }
 
+        public void Add(Staff staff)
+        {
+            _dbContext.Staff.Add(staff);
+            _dbContext.SaveChanges();
+        }
+
         public IEnumerable<Staff> GetAll()
         {
             return _dbContext.Staff.Select(s => new Staff
