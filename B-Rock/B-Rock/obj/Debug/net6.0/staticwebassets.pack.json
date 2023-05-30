@@ -1,451 +1,455 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\B-Rock.bundle.scp.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\B-Rock.bundle.scp.css",
       "PackagePath": "staticwebassets\\B-Rock.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Andres-Küppers.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Andres-Küppers.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Andres-Küppers.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Bart-Aerbeydt.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Bart-Aerbeydt.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Bart-Aerbeydt.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Benny-Aghassi.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Benny-Aghassi.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Benny-Aghassi.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\David-Wish.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\David-Wish.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\David-Wish.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Elise-Christiaens.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Elise-Christiaens.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Elise-Christiaens.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Ellie-Nimeroski.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Ellie-Nimeroski.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Ellie-Nimeroski.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Evgeny-Sviridov.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Evgeny-Sviridov.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Evgeny-Sviridov.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Jan-Huylebroeck.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Jan-Huylebroeck.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Jan-Huylebroeck.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Jean-Marc-Philippe.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Jean-Marc-Philippe.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Jean-Marc-Philippe.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Jean-Philippe-Ponchin.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Jean-Philippe-Ponchin.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Jean-Philippe-Ponchin.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Jivka-Kaltcheva.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Jivka-Kaltcheva.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Jivka-Kaltcheva.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Julien-Barre.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Julien-Barre.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Julien-Barre.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Karl-Nyhlin.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Karl-Nyhlin.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Karl-Nyhlin.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Liesbeth-Nijs.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Liesbeth-Nijs.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Liesbeth-Nijs.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Luc-Gysbregts.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Luc-Gysbregts.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Luc-Gysbregts.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Madoka-Nakamaru.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Madoka-Nakamaru.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Madoka-Nakamaru.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Manuela-Bucher.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Manuela-Bucher.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Manuela-Bucher.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Mark-De-Merlier.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Mark-De-Merlier.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Mark-De-Merlier.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Ortwin-Lowyck.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Mylan-Coudeville_1740.jpg",
+      "PackagePath": "staticwebassets\\img\\Artiesten\\Mylan-Coudeville_1740.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Ortwin-Lowyck.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Ortwin-Lowyck.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Raquel-Massadas.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Raquel-Massadas.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Raquel-Massadas.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Rebecca-Huber.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Rebecca-Huber.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Rebecca-Huber.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Rebecca-Rosen.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Rebecca-Rosen.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Rebecca-Rosen.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Sara-Decorso.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Sara-Decorso.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Sara-Decorso.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Shiho-Ono.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Shiho-Ono.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Shiho-Ono.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Sien-Huybrechts.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Sien-Huybrechts.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Sien-Huybrechts.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Stefaan-Verdegem.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Stefaan-Verdegem.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Stefaan-Verdegem.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Tami-Krausz.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Tami-Krausz.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Tami-Krausz.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Tom-Devaere.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Tom-Devaere.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Tom-Devaere.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Tomasz-Aghassi.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Tomasz-Aghassi.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Tomasz-Aghassi.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Vincenzo-Casale.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Vincenzo-Casale.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Vincenzo-Casale.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Yukie-Yamaguchi.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Yukie-Yamaguchi.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Yukie-Yamaguchi.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\BackgroundImageArtists.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\BackgroundImageArtists.jpg",
       "PackagePath": "staticwebassets\\img\\BackgroundImageArtists.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\Mozart-Mass.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\Mozart-Mass.jpg",
       "PackagePath": "staticwebassets\\img\\Concerts\\Mozart-Mass.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\Tears-Of-Melancholy.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\Tears-Of-Melancholy.jpg",
       "PackagePath": "staticwebassets\\img\\Concerts\\Tears-Of-Melancholy.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\The-Travels-Of-Monteverdi.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\The-Travels-Of-Monteverdi.jpg",
       "PackagePath": "staticwebassets\\img\\Concerts\\The-Travels-Of-Monteverdi.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\Un-Nouveau-Vent.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\Un-Nouveau-Vent.jpg",
       "PackagePath": "staticwebassets\\img\\Concerts\\Un-Nouveau-Vent.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Contrabasisten.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Contrabasisten.jpg",
       "PackagePath": "staticwebassets\\img\\Contrabasisten.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\GeneralArtist.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\GeneralArtist.jpg",
       "PackagePath": "staticwebassets\\img\\GeneralArtist.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Logo_B'rock.png",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Logo_B'rock.png",
       "PackagePath": "staticwebassets\\img\\Logo_B'rock.png"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Nationale-Loterij.png",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Nationale-Loterij.png",
       "PackagePath": "staticwebassets\\img\\Nationale-Loterij.png"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Stad-Gent.png",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Stad-Gent.png",
       "PackagePath": "staticwebassets\\img\\Stad-Gent.png"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Aglaja-Thiesen.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Aglaja-Thiesen.jpg",
       "PackagePath": "staticwebassets\\img\\Staff\\Aglaja-Thiesen.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Albert-Edelman.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Albert-Edelman.jpg",
       "PackagePath": "staticwebassets\\img\\Staff\\Albert-Edelman.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Claire-Desmedt.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Claire-Desmedt.jpg",
       "PackagePath": "staticwebassets\\img\\Staff\\Claire-Desmedt.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Davina-VanBelle.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Davina-VanBelle.jpg",
       "PackagePath": "staticwebassets\\img\\Staff\\Davina-VanBelle.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Laurent-Langlois.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Laurent-Langlois.jpg",
       "PackagePath": "staticwebassets\\img\\Staff\\Laurent-Langlois.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Sharon-Buffel.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Sharon-Buffel.jpg",
       "PackagePath": "staticwebassets\\img\\Staff\\Sharon-Buffel.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Tom-Devaere.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Tom-Devaere.jpg",
       "PackagePath": "staticwebassets\\img\\Staff\\Tom-Devaere.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Toon-Vannieuwenhuyse.jpg",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Toon-Vannieuwenhuyse.jpg",
       "PackagePath": "staticwebassets\\img\\Staff\\Toon-Vannieuwenhuyse.jpg"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Vlaanderen.png",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Vlaanderen.png",
       "PackagePath": "staticwebassets\\img\\Vlaanderen.png"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\noImage.png",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\noImage.png",
       "PackagePath": "staticwebassets\\img\\noImage.png"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\mylan\\Odisee\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

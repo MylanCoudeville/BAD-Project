@@ -31,9 +31,12 @@
                             {
                                 <p class="card-text">@item.Role</p>
                             }
-                        <div class="d-flex justify-content-between align-self-end">
-                            <a asp-controller="Book" asp-action="DetailBook" asp-route-id="book.Id">Details</a>
+                        <div class="d-flex justify-content-around align-self-end">
+                            @*<a asp-controller="Book" asp-action="DetailBook" asp-route-id="book.Id">Details</a>*@
                             <a class="btn btn-primary" asp-action="EditArtist" asp-controller="About" asp-route-id="@item.Id">Edit</a>
+                                <form class="d-inline" asp-action="Index" asp-controller="About" asp-route-id="@item.Id">
+                                <input type="submit" value="Remove" class="btn btn-danger" />
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -41,4 +44,9 @@
         </div>
         }
     </div>
+}
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

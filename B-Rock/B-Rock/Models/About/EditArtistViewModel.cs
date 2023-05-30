@@ -17,9 +17,8 @@ namespace B_Rock.Models.About
         [Display(Name = "Instrument")]
         [Required(ErrorMessage = "Please select an instrument the artist plays.")]
         public int InstrumentId { get; set; }
-        [Required(ErrorMessage = "Please, upload an image of the new artist.")]
         public IFormFile? Image { get; set; }
         public string UniqueURL { get; set; }
-        public IEnumerable<Instrument> Instruments { get; set; } = new List<Instrument>();
+        public IEnumerable<Instrument>? Instruments { get; set; } = new List<Instrument>();
     }
 }

@@ -23,5 +23,10 @@ namespace B_Rock.Services
         {
             return _dbContext.Instruments.Max(i => i.Id);
         }
+
+        public Instrument GetById(int id)
+        {
+            return _dbContext.Instruments.Where(i => i.Id == id).SingleOrDefault();
+        }
     }
 }

@@ -11,6 +11,18 @@ namespace B_Rock.Services
             _dbContext = dbContext;
         }
 
+        public void AddArtist(Artist artist)
+        {
+            _dbContext.Artists.Add(artist);
+            _dbContext.SaveChanges();
+        }
+
+        public void DeleteArtist(Artist artist)
+        {
+            _dbContext.Artists.Remove(artist);
+            _dbContext.SaveChanges();
+        }
+
         public Artist GetById(int id)
         {
             return _dbContext.Artists.Include(a => a.Instrument).Where(a => a.Id == id).Select(a => new Artist
@@ -39,6 +51,12 @@ namespace B_Rock.Services
                     Instrument = a.Instrument,
                     UniqueURL= a.UniqueURL
                 }).ToList();
+        }
+
+        public void UpdateArtist(Artist artist)
+        {
+            _dbContext.Artists.Update(artist);
+            _dbContext.SaveChanges();
         }
     }
 }

@@ -6,5 +6,6 @@ namespace B_Rock.Services
     {
         int GetAmountInstruments();
         IEnumerable<Instrument> GetAll();
+        Instrument GetById(int id);
     }
 }
