@@ -1,26 +1,120 @@
 ﻿using B_Rock.Data;
+using B_Rock.Models.Calendar;
 using B_Rock.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Drawing;
 
 namespace B_Rock.Controllers
 {
     public class CalendarController : Controller
     {
         private readonly IConcertService _concertService;
-        public CalendarController(IConcertService concertService)
+        private readonly Microsoft.AspNetCore.Hosting.IHostingEnvironment _hostEnvironment;
+        public CalendarController(IConcertService concertService, Microsoft.AspNetCore.Hosting.IHostingEnvironment hostEnvironment)
         {
             _concertService = concertService;
+            _hostEnvironment = hostEnvironment;
         }
 
         public IActionResult Index()
         {
-            IEnumerable<Concert> concerts = _concertService.GetAll();
+            IEnumerable<Concert> concerts = _concertService.GetAllInFuture();
             return View(concerts);
         }
-        public IActionResult EditConcert(int Id)
+        public IActionResult AddConcert()
         {
-            Concert c = _concertService.GetById(Id);
-            //TODO: doe hier verder ben nu te moe...
+            return View();
         }
+        public IActionResult EditConcert(int id)
+        {
+            Concert c = _concertService.GetById(id);
+            EditConcertViewModel viewModel = new EditConcertViewModel()
+            {
+                Id = c.Id,
+                Title = c.Title,
+                PerformedBy = c.PerformedBy,
+                Location = c.Location,
+                City = c.City,
+                Country = c.Country,
+                DateAndTime = c.DateAndTime,
+                UniqueURL = c.UniqueURL,
+                ExternLink = c.ExternLink,
+            };
+            return View(viewModel);
+        }
+        public IActionResult Index(int id)
+        {
+            Concert toDeleteConcert = _concertService.GetById(id);
+            _concertService.RemoveConcert(toDeleteConcert);
+            return RedirectToAction("Index");
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult AddConcert(AddConcertViewModel viewModel)
+        {
+            //TODO: testen
+            if (ModelState.IsValid)
+            {
+                string uniqueFileName = GetUniqueFileName(viewModel.Image.FileName);
+                string uploads = Path.Combine(_hostEnvironment.WebRootPath, "img/Concert");
+                string filePath = Path.Combine(uploads, uniqueFileName);
+                viewModel.Image.CopyTo(new FileStream(filePath, FileMode.Create));
+
+                Concert newConcert = new Concert()
+                {
+                    Title = viewModel.Title,
+                    PerformedBy = viewModel.PerformedBy,
+                    Location = viewModel.Location,
+                    City = viewModel.City,
+                    Country = viewModel.Country,
+                    DateAndTime = viewModel.DateAndTime,
+                    ExternLink = viewModel.ExternLink,
+                    UniqueURL = uniqueFileName
+                };
+                return RedirectToAction("Index");
+            }
+            return View(viewModel);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult EditConcert(EditConcertViewModel viewModel)
+        {
+            //TODO: testen
+            if (ModelState.IsValid)
+            {
+                Concert editConcert = new Concert()
+                {
+                    Id = viewModel.Id,
+                    Title = viewModel.Title,
+                    PerformedBy = viewModel.PerformedBy,
+                    Location = viewModel.Location,
+                    City = viewModel.City,
+                    Country = viewModel.Country,
+                    DateAndTime = viewModel.DateAndTime,
+                    UniqueURL = viewModel.UniqueURL,
+                    ExternLink = viewModel.ExternLink,
+                };
+                if (viewModel.Image != null)
+                {
+                    string uniqueFileName = GetUniqueFileName(viewModel.Image.FileName);
+                    string uploads = Path.Combine(_hostEnvironment.WebRootPath, "img/Concert");
+                    string filePath = Path.Combine(uploads, uniqueFileName);
+                    viewModel.Image.CopyTo(new FileStream(filePath, FileMode.Create));
+                    editConcert.UniqueURL = uniqueFileName;
+                }
+                _concertService.UpdateConcert(editConcert);
+                return RedirectToAction("Index");
+            }
+            return View(viewModel);
+        }
+        private string GetUniqueFileName(string fileName)
+        {
+            fileName = Path.GetFileName(fileName);
+            return Path.GetFileNameWithoutExtension(fileName)
+                      + "_"
+                      + Guid.NewGuid().ToString().Substring(0, 4)
+                      + Path.GetExtension(fileName);
+        }
+        //https://stackoverflow.com/questions/35379309/how-to-upload-files-in-asp-net-core/35385472#35385472
     }
 }

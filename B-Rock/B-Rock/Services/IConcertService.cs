@@ -6,5 +6,9 @@ namespace B_Rock.Services
     {
         Concert GetById(int Id);
         IEnumerable<Concert> GetAll();
+        IEnumerable<Concert> GetAllInFuture();
+        void AddConcert(Concert concert);
+        void RemoveConcert(Concert concert);
+        void UpdateConcert(Concert concert);
     }
 }

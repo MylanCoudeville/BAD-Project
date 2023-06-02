@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Xml.Linq;
 
 namespace B_Rock.Models.Calendar
 {
-    public class EditConcertViewModel
+    public class AddConcertViewModel
     {
-        public int Id { get; set; }
         [Required(ErrorMessage = "Fill in the title of the concert.")]
         public string Title { get; set; }
         [Required(ErrorMessage = "Fill in the group that is playing at the concert.")]
@@ -19,8 +19,8 @@ namespace B_Rock.Models.Calendar
         [DataType(DataType.DateTime)]
         [Display(Name = "Date and time")]
         public DateTime DateAndTime { get; set; }
-        public IFormFile? Image { get; set; }
-        public string UniqueURL { get; set; }
+        [Required(ErrorMessage = "Upload an image of the concert.")]
+        public IFormFile Image { get; set; }
         [Required(ErrorMessage = "Fill in the external link to the concert.")]
         [Display(Name = "External link")]
         public string ExternLink { get; set; }

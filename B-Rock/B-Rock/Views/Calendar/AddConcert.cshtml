@@ -1,0 +1,58 @@
+﻿@model B_Rock.Models.Calendar.AddConcertViewModel
+@{
+    ViewBag.SubTitle = "Concert";
+    ViewBag.Title = "Add concert";
+    ViewData["Title"] = "Add concert";
+}
+<h4>@ViewBag.SubTitle</h4>
+<div asp-validation-summary="All" class="text-danger"></div>
+<form asp-controller="Calendar" asp-action="EditConcert" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Title" class="control-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PerformedBy" class="control-label"></label>
+        <input asp-for="PerformedBy" class="form-control" />
+        <span asp-validation-for="PerformedBy" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Location" class="control-label"></label>
+        <input asp-for="Location" class="form-control" />
+        <span asp-validation-for="Location" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="City" class="control-label"></label>
+        <input asp-for="City" class="form-control" />
+        <span asp-validation-for="City" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Country" class="control-label"></label>
+        <input asp-for="Country" class="form-control" />
+        <span asp-validation-for="Country" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DateAndTime" class="control-label"></label>
+        <input asp-for="DateAndTime" class="form-control" />
+        <span asp-validation-for="DateAndTime" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Image" class="control-label"></label>
+        <input asp-for="Image" class="form-control" />
+        <span asp-validation-for="Image" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ExternLink" class="control-label"></label>
+        <input asp-for="ExternLink" class="form-control" />
+        <span asp-validation-for="ExternLink" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Add staffmember" class="btn btn-primary" />
+    </div>
+</form>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
