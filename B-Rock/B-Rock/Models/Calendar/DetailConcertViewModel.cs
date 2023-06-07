@@ -17,5 +17,6 @@ namespace B_Rock.Models.Calendar
         [Display(Name = "Extern link")]
         public string ExternLink { get; set; }
         public int Quantity { get; set; }
+        public double Price { get; set; }
     }
 }

@@ -371,6 +371,9 @@ namespace B_Rock.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -393,6 +396,7 @@ namespace B_Rock.Migrations
                             ExternLink = "https://b-rock.org/project/mozart-mass-3/",
                             Location = "De Singel",
                             PerformedBy = "Haydn & Mozart with Vox Luminis XL",
+                            Price = 15.0,
                             Title = "Mozart Mass",
                             UniqueURL = "Mozart-Mass.jpg"
                         },
@@ -405,6 +409,7 @@ namespace B_Rock.Migrations
                             ExternLink = "https://b-rock.org/project/tears-of-melancholy-2/",
                             Location = "Chapelle Corneille",
                             PerformedBy = "Antoine Tamestit & B'Rock",
+                            Price = 25.0,
                             Title = "Tears Of Melancholy",
                             UniqueURL = "Tears-Of-Melancholy.jpg"
                         },
@@ -417,6 +422,7 @@ namespace B_Rock.Migrations
                             ExternLink = "https://b-rock.org/project/monteverdis-journey/",
                             Location = "The German Church",
                             PerformedBy = "B’Rock Orchestra & Vocal Consort",
+                            Price = 35.0,
                             Title = "The Travels Of Monteverdi",
                             UniqueURL = "The-Travels-Of-Monteverdi.jpg"
                         },
@@ -429,6 +435,7 @@ namespace B_Rock.Migrations
                             ExternLink = "https://b-rock.org/project/un-nouveau-vent/",
                             Location = "Opéra de Raims",
                             PerformedBy = "Fin de siècle à Paris",
+                            Price = 45.0,
                             Title = "Un Nouveau Vent",
                             UniqueURL = "Un-Nouveau-Vent.jpg"
                         });

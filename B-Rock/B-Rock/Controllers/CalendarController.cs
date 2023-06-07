@@ -2,6 +2,7 @@
 using B_Rock.Models.Calendar;
 using B_Rock.Services;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Drawing;
 
 namespace B_Rock.Controllers
@@ -37,7 +38,9 @@ namespace B_Rock.Controllers
                 Country = concert.Country,
                 DateAndTime = concert.DateAndTime,
                 UniqueURL = concert.UniqueURL,
-                ExternLink = concert.ExternLink
+                ExternLink = concert.ExternLink,
+                Price = concert.Price,
+                Quantity = 0
             };
             return View(viewModel);
         }
@@ -55,6 +58,7 @@ namespace B_Rock.Controllers
                 DateAndTime = c.DateAndTime,
                 UniqueURL = c.UniqueURL,
                 ExternLink = c.ExternLink,
+                Price = c.Price
             };
             return View(viewModel);
         }
@@ -86,7 +90,8 @@ namespace B_Rock.Controllers
                     Country = viewModel.Country,
                     DateAndTime = viewModel.DateAndTime,
                     ExternLink = viewModel.ExternLink,
-                    UniqueURL = uniqueFileName
+                    UniqueURL = uniqueFileName,
+                    Price = viewModel.Price
                 };
                 _concertService.AddConcert(newConcert);
                 return RedirectToAction("Index");
@@ -110,6 +115,7 @@ namespace B_Rock.Controllers
                     DateAndTime = viewModel.DateAndTime,
                     UniqueURL = viewModel.UniqueURL,
                     ExternLink = viewModel.ExternLink,
+                    Price = viewModel.Price
                 };
                 if (viewModel.Image != null)
                 {

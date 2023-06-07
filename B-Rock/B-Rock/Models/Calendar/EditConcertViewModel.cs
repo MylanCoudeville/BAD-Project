@@ -24,5 +24,8 @@ namespace B_Rock.Models.Calendar
         [Required(ErrorMessage = "Fill in the external link to the concert.")]
         [Display(Name = "External link")]
         public string ExternLink { get; set; }
+        [Required(ErrorMessage = "Fill in the price of the concert")]
+        [Range(0, double.MaxValue, ErrorMessage = "The price has to be a positive number")]
+        public double Price { get; set; }
     }
 }
