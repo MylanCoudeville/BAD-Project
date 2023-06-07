@@ -42,6 +42,8 @@ namespace B_Rock.Controllers
             };
             return View(viewModel);
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Index(int id)
         {
             Concert toDeleteConcert = _concertService.GetById(id);
@@ -52,11 +54,10 @@ namespace B_Rock.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult AddConcert(AddConcertViewModel viewModel)
         {
-            //TODO: testen
             if (ModelState.IsValid)
             {
                 string uniqueFileName = GetUniqueFileName(viewModel.Image.FileName);
-                string uploads = Path.Combine(_hostEnvironment.WebRootPath, "img/Concert");
+                string uploads = Path.Combine(_hostEnvironment.WebRootPath, "img/Concerts");
                 string filePath = Path.Combine(uploads, uniqueFileName);
                 viewModel.Image.CopyTo(new FileStream(filePath, FileMode.Create));
 
@@ -71,6 +72,7 @@ namespace B_Rock.Controllers
                     ExternLink = viewModel.ExternLink,
                     UniqueURL = uniqueFileName
                 };
+                _concertService.AddConcert(newConcert);
                 return RedirectToAction("Index");
             }
             return View(viewModel);
@@ -79,7 +81,6 @@ namespace B_Rock.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult EditConcert(EditConcertViewModel viewModel)
         {
-            //TODO: testen
             if (ModelState.IsValid)
             {
                 Concert editConcert = new Concert()
