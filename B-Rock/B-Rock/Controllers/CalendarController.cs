@@ -25,6 +25,22 @@ namespace B_Rock.Controllers
         {
             return View();
         }
+        public IActionResult DetailConcert(int id)
+        {
+            Concert concert = _concertService.GetById(id);
+            DetailConcertViewModel viewModel = new DetailConcertViewModel() {
+                Id = concert.Id,
+                Title = concert.Title,
+                PerformedBy = concert.PerformedBy,
+                Location = concert.Location,
+                City = concert.City,
+                Country = concert.Country,
+                DateAndTime = concert.DateAndTime,
+                UniqueURL = concert.UniqueURL,
+                ExternLink = concert.ExternLink
+            };
+            return View(viewModel);
+        }
         public IActionResult EditConcert(int id)
         {
             Concert c = _concertService.GetById(id);

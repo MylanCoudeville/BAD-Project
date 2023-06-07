@@ -19,8 +19,8 @@
             </ul>
             <div class="card-body">
                 <p>
-                    <a href="#" class="card-link">Add to card</a>
-                    <a href="@concert.ExternLink" class="card-link">Concert link</a>
+                    <a asp-action="DetailConcert" asp-controller="Calendar" asp-route-id="@concert.Id" class="card-link btn btn-success">Add to card</a>
+                    <a href="@concert.ExternLink" class="card-link btn btn-link">Concert link</a>
                 </p>
                 <a class="btn btn-primary" asp-action="EditConcert" asp-controller="Calendar" asp-route-id="@concert.Id">Edit</a>
                 <form class="d-inline" asp-action="Index" asp-controller="Calendar" asp-route-id="@concert.Id">
