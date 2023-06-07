@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace B_Rock.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230530204914_concertUrl")]
-    partial class concertUrl
+    [Migration("20230607200705_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

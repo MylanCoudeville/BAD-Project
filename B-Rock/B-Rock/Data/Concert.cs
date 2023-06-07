@@ -13,6 +13,7 @@ namespace B_Rock.Data
         public string City { get; set; }
         public string Country { get; set; }
         public DateTime DateAndTime { get; set; }
+        //public double Price { get; set; }
         public string UniqueURL { get; set; }
         public string ExternLink { get; set; }
     }

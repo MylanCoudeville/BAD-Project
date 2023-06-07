@@ -27,6 +27,7 @@ namespace B_Rock.Services
                 City = c.City,
                 Country = c.Country,
                 DateAndTime = c.DateAndTime,
+                //Price = c.Price,
                 UniqueURL = c.UniqueURL,
                 ExternLink = c.ExternLink
             }).ToList();
@@ -44,6 +45,7 @@ namespace B_Rock.Services
                 City = c.City,
                 Country = c.Country,
                 DateAndTime = c.DateAndTime,
+                //Price = c.Price,
                 UniqueURL = c.UniqueURL,
                 ExternLink = c.ExternLink
             }).ToList();
@@ -60,6 +62,7 @@ namespace B_Rock.Services
                 City = c.City,
                 Country = c.Country,
                 DateAndTime = c.DateAndTime,
+                //Price = c.Price,
                 UniqueURL = c.UniqueURL,
                 ExternLink = c.ExternLink
             }).FirstOrDefault();

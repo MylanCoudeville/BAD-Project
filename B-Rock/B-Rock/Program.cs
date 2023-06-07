@@ -12,6 +12,7 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+builder.Services.AddSession();
 builder.Services.AddScoped<IArtistService, ArtistService>();
 builder.Services.AddScoped<IConcertService, ConcertService>();
 builder.Services.AddScoped<IInstrumentService, InstrumentService>();
@@ -32,6 +33,9 @@ else
 }
 
 app.UseHttpsRedirection();
+
+app.UseSession();
+
 app.UseStaticFiles();
 
 app.UseRouting();
