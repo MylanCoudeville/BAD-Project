@@ -59,12 +59,12 @@
                     Tickets
                 </dt>
                 <dd class="col-sm-10">
-                    <form asp-controller="Cart" asp-action="AddToCart" asp-route-bookId="@Model.Id">
-                <div asp-validation-summary="All" class="text-danger"></div>         
-                <label for="Quantity" class="control-label"></label>         
-                <input name="Quantity" id="Quantity" type="number" min="1" required />
-                <input type="submit" value="Add To Cart" class="btn btn-success" /> 
-            </form>
+                    <form asp-controller="Reservation" asp-action="Index" asp-route-concertId="@Model.Id">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <label for="Quantity" class="control-label"></label>
+                        <input name="Quantity" id="Quantity" type="number" min="1" required />
+                        <input type="submit" value="Buy ticket(s)" class="btn btn-success" />
+                    </form>
                 </dd>
             </dl>
         </div>
@@ -73,3 +73,8 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
