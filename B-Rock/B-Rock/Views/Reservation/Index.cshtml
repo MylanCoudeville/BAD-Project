@@ -2,7 +2,7 @@
 @model B_Rock.Models.Reservation.CheckoutReservationViewModel
 
 
-<form asp-action="Index" asp-controller="Reservation">
+<form asp-action="AddOrder" asp-controller="Reservation">
     <div class="form-group">
         <label asp-for="Title" class="control-label"></label>
         <input asp-for="Title" class="form-control" readonly />
@@ -34,6 +34,11 @@
         <span asp-validation-for="LastName" class="text-danger"></span>
     </div>
     <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
         <label asp-for="Street" class="control-label"></label>
         <input asp-for="Street" class="form-control" />
         <span asp-validation-for="Street" class="text-danger"></span>
@@ -59,7 +64,9 @@
         <span asp-validation-for="Country" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <input type="submit" value="AddArtist" class="btn btn-primary" />
+        <input type="hidden" asp-for="ConcertId" />
+        <input type="hidden" asp-for="UserId" />
+        <input type="submit" value="Submit order" class="btn btn-primary" />
     </div>
 </form>
 @section Scripts {

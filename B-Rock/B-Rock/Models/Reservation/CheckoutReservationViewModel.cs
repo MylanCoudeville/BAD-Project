@@ -18,6 +18,9 @@ namespace B_Rock.Models.Reservation
         [Display(Name = "Last name")]
         [Required(ErrorMessage = "Fill in your last name.")]
         public string LastName { get; set; }
+        [Required(ErrorMessage = "Fill in a email address.")]
+        [DataType(DataType.EmailAddress, ErrorMessage = "Fill in a valid email address.")]
+        public string Email { get; set; }
         [Required(ErrorMessage = "Fill in your street name.")]
         public string Street { get; set; }
         [Required(ErrorMessage = "Fill in your house number.")]

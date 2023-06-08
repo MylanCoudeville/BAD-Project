@@ -85,5 +85,6 @@ namespace B_Rock.Data
         public DbSet<Concert> Concerts { get; set; }
         public DbSet<Instrument> Instruments { get; set; }
         public DbSet<Staff> Staff { get; set;}
+        public DbSet<Ticket> Tickets { get; set; }
     }
 }
