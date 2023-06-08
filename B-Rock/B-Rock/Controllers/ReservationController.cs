@@ -18,8 +18,13 @@ namespace B_Rock.Controllers
             _userManager = userManager;
             _ticketService = ticketService;
         }
+        public IActionResult AddOrder()
+        {
+            return RedirectToAction("Index");
+        }
         public async Task<IActionResult> Index(int concertId, int Quantity)
         {
+            if (concertId == null || Quantity == null) return RedirectToAction("Index", "Calendar");
             Concert c = _concertService.GetById(concertId);
             CheckoutReservationViewModel viewModel = new CheckoutReservationViewModel() {
                 ConcertId = c.Id,
@@ -39,13 +44,33 @@ namespace B_Rock.Controllers
             }
             return View(viewModel);
         }
-        public ActionResult Successful() 
+        public async Task<IActionResult> Overview()
         {
+            if (HttpContext.User.Identity.IsAuthenticated)
+            {
+                B_RockUser user = await _userManager.GetUserAsync(HttpContext.User);
+                IEnumerable<Ticket> userTickets = _ticketService.GetAllFromUser(user.Id);
+                ListOverviewViewModel viewModel = new ListOverviewViewModel();
+                foreach (Ticket ticket in userTickets)
+                {
+                    Concert c = _concertService.GetById(ticket.ConcertId);
+                    viewModel.viewModels.Add(new OverviewViewModel()
+                    {
+                        Id = ticket.Id,
+                        ConcertName = c.Title,
+                        ConcertDateAndTime = c.DateAndTime,
+                        ConcertLocation = c.Location,
+                        Quantity = ticket.Quantity,
+                        TotalPrice = ticket.TotalPrice
+                    });
+                }
+                return View(viewModel);
+            }
             return View();
         }
-        public IActionResult AddOrder()
+        public IActionResult Successful() 
         {
-            return RedirectToAction("Index");
+            return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -61,11 +86,11 @@ namespace B_Rock.Controllers
                     LastName = viewModel.LastName,
                     TotalPrice = viewModel.TotalPrice,
                     Email = viewModel.Email,
-                    Street= viewModel.Street,
-                    Number= viewModel.Number,
-                    City= viewModel.City,
-                    ZIPCode= viewModel.ZIPCode,
-                    Country= viewModel.Country
+                    Street = viewModel.Street,
+                    Number = viewModel.Number,
+                    City = viewModel.City,
+                    ZIPCode = viewModel.ZIPCode,
+                    Country = viewModel.Country
                 };
                 if (HttpContext.User.Identity.IsAuthenticated)
                 {

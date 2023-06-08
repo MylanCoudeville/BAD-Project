@@ -13,7 +13,26 @@ namespace B_Rock.Services
         {
             _dbContext.Tickets.Add(ticket);
             _dbContext.SaveChanges();
-            Console.WriteLine("------------------Saved Changes----------------");
+        }
+
+        public IEnumerable<Ticket> GetAllFromUser(string userId)
+        {
+            return _dbContext.Tickets.Where(t => t.UserId == userId)
+                .Select(t => new Ticket()
+                {
+                    UserId = t.UserId,
+                    Id = t.Id,
+                    ConcertId = t.ConcertId,
+                    FirstName = t.FirstName,
+                    LastName = t.LastName,
+                    Email = t.Email,
+                    Street = t.Street,
+                    City = t.City,
+                    ZIPCode = t.ZIPCode,
+                    Country = t.Country,
+                    Quantity = t.Quantity,
+                    TotalPrice = t.TotalPrice
+                }).ToList();
         }
     }
 }
