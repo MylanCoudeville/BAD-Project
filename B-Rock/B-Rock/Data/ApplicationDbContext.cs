@@ -4,7 +4,7 @@ using static System.Net.WebRequestMethods;
 
 namespace B_Rock.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<B_RockUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)

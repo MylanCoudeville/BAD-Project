@@ -13,14 +13,22 @@ namespace B_Rock.Models.Reservation
         public int Quantity { get; set; }
         public double TotalPrice { get; set; }
         [Display(Name = "First name")]
+        [Required(ErrorMessage = "Fill in your first name.")]
         public string FirstName { get; set; }
         [Display(Name = "Last name")]
+        [Required(ErrorMessage = "Fill in your last name.")]
         public string LastName { get; set; }
+        [Required(ErrorMessage = "Fill in your street name.")]
         public string Street { get; set; }
+        [Required(ErrorMessage = "Fill in your house number.")]
         public string Number { get; set; }
+        [Required(ErrorMessage = "Fill in your country.")]
         public string Country { get; set; }
+        [Required(ErrorMessage = "Fill in your city name.")]
         public string City { get; set; }
         [Display(Name = "ZIP-code")]
+        [Required(ErrorMessage = "Fill in your ZIP-code.")]
         public string ZIPCode { get; set; }
+        public string? UserId { get; set; }
     }
 }

@@ -2,25 +2,39 @@
 using B_Rock.Models.Calendar;
 using B_Rock.Models.Reservation;
 using B_Rock.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace B_Rock.Controllers
 {
     public class ReservationController : Controller
     {
-        private readonly ConcertService _concertService;
-        public ReservationController(ConcertService concertService)
+        private readonly UserManager<B_RockUser> _userManager;
+        private readonly IConcertService _concertService;
+        public ReservationController(IConcertService concertService, UserManager<B_RockUser> userManager)
         {
             _concertService = concertService;
+            _userManager = userManager;
         }
-        public IActionResult Index(int concertId, int Quantity)
+        public async Task<IActionResult> Index(int concertId, int Quantity)
         {
             Concert c = _concertService.GetById(concertId);
-            CheckoutReservationViewModel viewModel= new CheckoutReservationViewModel() {
+            CheckoutReservationViewModel viewModel = new CheckoutReservationViewModel() {
                 ConcertId = c.Id,
-                Title = c.Title
+                Title = c.Title,
+                Location = c.Location,
+                DateAndTime = c.DateAndTime,
+                Quantity = Quantity,
+                TotalPrice = (Quantity * c.Price)
             };
-            return View();
+            if (HttpContext.User.Identity.IsAuthenticated)
+            {
+                B_RockUser user = await _userManager.GetUserAsync(HttpContext.User);
+                viewModel.UserId = user.Id;
+                viewModel.FirstName = user.FirstName;
+                viewModel.LastName = user.LastName;
+            }
+            return View(viewModel);
         }
     }
 }
