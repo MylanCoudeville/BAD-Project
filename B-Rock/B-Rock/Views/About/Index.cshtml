@@ -13,35 +13,35 @@
     <div class="d-flex flex-wrap justify-content-center">
         @foreach (var item in Model.artistsInGroups[i])
         {
-        <div class="card mb-3" style="width: 300px; margin: 25px; min-height: 380px;">
-            <div class="row g-0">
-                    @if(item.UniqueURL != null)
+            <div class="card mb-3" style="width: 300px; margin: 25px; min-height: 380px;">
+                <div class="row g-0">
+                    @if (item.UniqueURL != null)
                     {
                         <div class="col-md-4 coverUp" style="background-image: url('/img/Artiesten/@item.UniqueURL'); height: 250px;"></div>
                     }
                     else
                     {
-                    <div class="col-md-4 coverUp" style="background-image: url('/img/GeneralArtist.jpg'); height: 250px;"></div>
+                        <div class="col-md-4 coverUp" style="background-image: url('/img/GeneralArtist.jpg'); height: 250px;"></div>
                     }
-                    
-                <div class="col-md-10">
-                    <div class="card-body">
-                        <h5 class="card-title">@item.FirstName @item.LastName</h5>
-                        @if (item.Role != null)
+
+                    <div class="col-md-10">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.FirstName @item.LastName</h5>
+                            @if (item.Role != null)
                             {
                                 <p class="card-text">@item.Role</p>
                             }
-                        <div class="d-flex justify-content-around align-self-end">
-                            @*<a asp-controller="Book" asp-action="DetailBook" asp-route-id="book.Id">Details</a>*@
-                            <a class="btn btn-primary" asp-action="EditArtist" asp-controller="About" asp-route-id="@item.Id">Edit</a>
+                            <div class="d-flex justify-content-around align-self-end">
+                                @*<a asp-controller="Book" asp-action="DetailBook" asp-route-id="book.Id">Details</a>*@
+                                <a class="btn btn-primary" asp-action="EditArtist" asp-controller="About" asp-route-id="@item.Id">Edit</a>
                                 <form class="d-inline" asp-action="Index" asp-controller="About" asp-route-id="@item.Id">
-                                <input type="submit" value="Remove" class="btn btn-danger" />
-                            </form>
+                                    <input type="submit" value="Remove" class="btn btn-danger" />
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         }
     </div>
 }

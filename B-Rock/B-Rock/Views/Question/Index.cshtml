@@ -1,0 +1,40 @@
+﻿@using B_Rock.Data
+@model IEnumerable<B_Rock.Data.Question>
+
+@{
+    ViewData["Title"] = "Overview Questions";
+    int i = 1;
+}
+<h2>@ViewData["Title"]</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Person</th>
+            <th scope="col">Question</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Question question in Model)
+        {
+            @if (!question.IsAnswered)
+            {
+                <tr>
+                    <th>@question.Created.ToShortDateString()</th>
+                    <td>
+                        <b>@question.FirstName @question.LastName</b> <br>
+                        <a href="mailto:@question.Email">@question.Email</a>
+                    </td>
+                    <td>@question.Message</td>
+                    <td>
+                        <form class="d-inline" asp-action="Index" asp-controller="Question" asp-route-id="@question.Id">
+                            <input type="hidden" asp-for="@question.Id" />
+                            <input type="submit" value="Done" class="btn btn-success" />
+                        </form>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

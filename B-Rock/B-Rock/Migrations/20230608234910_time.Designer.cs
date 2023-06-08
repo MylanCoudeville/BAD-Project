@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace B_Rock.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230608195045_init")]
-    partial class init
+    [Migration("20230608234910_time")]
+    partial class time
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -600,6 +600,44 @@ namespace B_Rock.Migrations
                         });
                 });
 
+            modelBuilder.Entity("B_Rock.Data.Question", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsAnswered")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Questions");
+                });
+
             modelBuilder.Entity("B_Rock.Data.Staff", b =>
                 {
                     b.Property<int>("Id")
@@ -769,8 +807,6 @@ namespace B_Rock.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ConcertId");
-
                     b.ToTable("Tickets");
                 });
 
@@ -920,17 +956,6 @@ namespace B_Rock.Migrations
                         .IsRequired();
 
                     b.Navigation("Instrument");
-                });
-
-            modelBuilder.Entity("B_Rock.Data.Ticket", b =>
-                {
-                    b.HasOne("B_Rock.Data.Concert", "Concert")
-                        .WithMany()
-                        .HasForeignKey("ConcertId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Concert");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

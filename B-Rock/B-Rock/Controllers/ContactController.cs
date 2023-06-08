@@ -1,27 +1,49 @@
 ﻿using B_Rock.Data;
 using B_Rock.Models.Contact;
 using B_Rock.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Hosting;
 
 namespace B_Rock.Controllers
 {
     public class ContactController : Controller
     {
+        private readonly UserManager<B_RockUser> _userManager;
         private readonly IStaffService _staffService;
         private readonly Microsoft.AspNetCore.Hosting.IHostingEnvironment _hostEnvironment;
-        public ContactController(IStaffService staffService, Microsoft.AspNetCore.Hosting.IHostingEnvironment hostEnvironment)
+        private readonly IQuestionService _questionService;
+        public ContactController(IStaffService staffService, Microsoft.AspNetCore.Hosting.IHostingEnvironment hostEnvironment, UserManager<B_RockUser> userManager, IQuestionService questionService)
         {
             _staffService = staffService;
             _hostEnvironment = hostEnvironment;
+            _userManager = userManager;
+            _questionService = questionService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             IEnumerable<Staff> crew = _staffService.GetAll();
-            return View(crew);
+            IndexViewModel viewModel = new IndexViewModel()
+            {
+                StaffMembers = crew
+            };
+            if (HttpContext.User.Identity.IsAuthenticated)
+            {
+                B_RockUser user = await _userManager.GetUserAsync(HttpContext.User);
+                viewModel.UserId = user.Id;
+                viewModel.FirstName = user.FirstName;
+                viewModel.LastName = user.LastName;
+                viewModel.Email = user.Email;
+            }
+            return View(viewModel);
         }
         public IActionResult AddStaff()
+        {
+            return View();
+        }
+        public IActionResult Successful()
         {
             return View();
         }
@@ -51,6 +73,27 @@ namespace B_Rock.Controllers
                 Role = deleteStaff.Role,
                 UniqueURL = deleteStaff.UniqueURL
             };
+            return View(viewModel);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Index(IndexViewModel viewModel)
+        {
+            ModelState.Remove("StaffMembers");
+            if (ModelState.IsValid)
+            {
+                Question q = new Question()
+                {
+                    Email = viewModel.Email,
+                    FirstName = viewModel.FirstName,
+                    LastName = viewModel.LastName,
+                    Message = viewModel.Message,
+                    Created = DateTime.Now
+                };
+                if (HttpContext.User.Identity.IsAuthenticated) q.UserId = viewModel.UserId;
+                _questionService.AddQuestion(q);
+                return RedirectToAction("Successful");
+            }
             return View(viewModel);
         }
         [HttpPost]
