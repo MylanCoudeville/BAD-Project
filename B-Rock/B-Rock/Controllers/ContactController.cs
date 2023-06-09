@@ -1,6 +1,7 @@
 ﻿using B_Rock.Data;
 using B_Rock.Models.Contact;
 using B_Rock.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -8,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace B_Rock.Controllers
 {
+    [Authorize(Policy = "AdminOnly")]
     public class ContactController : Controller
     {
         private readonly UserManager<B_RockUser> _userManager;
@@ -21,7 +23,7 @@ namespace B_Rock.Controllers
             _userManager = userManager;
             _questionService = questionService;
         }
-
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             IEnumerable<Staff> crew = _staffService.GetAll();
@@ -43,6 +45,7 @@ namespace B_Rock.Controllers
         {
             return View();
         }
+        [AllowAnonymous]
         public IActionResult Successful()
         {
             return View();
@@ -77,6 +80,7 @@ namespace B_Rock.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AllowAnonymous]
         public async Task<IActionResult> Index(IndexViewModel viewModel)
         {
             ModelState.Remove("StaffMembers");

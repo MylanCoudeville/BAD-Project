@@ -1,12 +1,14 @@
 ﻿using B_Rock.Data;
 using B_Rock.Models.Calendar;
 using B_Rock.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Drawing;
 
 namespace B_Rock.Controllers
 {
+    [Authorize(Policy = "AdminOnly")]
     public class CalendarController : Controller
     {
         private readonly IConcertService _concertService;
@@ -16,7 +18,7 @@ namespace B_Rock.Controllers
             _concertService = concertService;
             _hostEnvironment = hostEnvironment;
         }
-
+        [AllowAnonymous]
         public IActionResult Index()
         {
             IEnumerable<Concert> concerts = _concertService.GetAllInFuture();

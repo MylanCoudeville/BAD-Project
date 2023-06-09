@@ -2,6 +2,7 @@
 using B_Rock.Models.Calendar;
 using B_Rock.Models.Reservation;
 using B_Rock.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -44,6 +45,7 @@ namespace B_Rock.Controllers
             }
             return View(viewModel);
         }
+        [Authorize(Policy = "Customer")]
         public async Task<IActionResult> Overview()
         {
             if (HttpContext.User.Identity.IsAuthenticated)

@@ -1,10 +1,12 @@
 ﻿using B_Rock.Data;
 using B_Rock.Models.About;
 using B_Rock.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace B_Rock.Controllers
 {
+    [Authorize(Policy = "AdminOnly")]
     public class AboutController : Controller
     {
         private readonly IArtistService _artistService;
@@ -16,7 +18,7 @@ namespace B_Rock.Controllers
             _instrumentService = instrumentService;
             _hostEnvironment = hostEnvironment;
         }
-
+        [AllowAnonymous]
         public IActionResult Index()
         {
             GetAllDevidedInGroup ArtistsInGroup = new GetAllDevidedInGroup();
@@ -67,7 +69,6 @@ namespace B_Rock.Controllers
             }
             return View(viewModel);
         }
-
         public IActionResult EditArtist(int id) {
             Artist a = _artistService.GetById(id);
             EditArtistViewModel viewModel = new EditArtistViewModel()
