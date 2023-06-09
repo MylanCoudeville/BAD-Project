@@ -37,9 +37,10 @@ namespace B_Rock.Controllers
             _artistService.DeleteArtist(deleteArtist);
             return RedirectToAction("Index");
         }
-        public IActionResult AddArtist() {
+        public IActionResult AddArtist()
+        {
             AddArtistViewModel viewModel = new AddArtistViewModel() { Instruments = _instrumentService.GetAll() };
-            return View(viewModel); 
+            return View(viewModel);
         }
 
         [HttpPost]
@@ -50,10 +51,10 @@ namespace B_Rock.Controllers
             {
                 Artist newArtist = new Artist()
                 {
-                    FirstName= viewModel.FirstName,
-                    LastName= viewModel.LastName,
-                    Role= viewModel.Role,
-                    InstrumentId= viewModel.InstrumentId,
+                    FirstName = viewModel.FirstName,
+                    LastName = viewModel.LastName,
+                    Role = viewModel.Role,
+                    InstrumentId = viewModel.InstrumentId,
                     Instrument = _instrumentService.GetById(viewModel.InstrumentId)
                 };
                 if (viewModel.Image != null)
@@ -69,7 +70,8 @@ namespace B_Rock.Controllers
             }
             return View(viewModel);
         }
-        public IActionResult EditArtist(int id) {
+        public IActionResult EditArtist(int id)
+        {
             Artist a = _artistService.GetById(id);
             EditArtistViewModel viewModel = new EditArtistViewModel()
             {

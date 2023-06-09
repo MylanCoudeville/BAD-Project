@@ -1,5 +1,4 @@
 ﻿using B_Rock.Data;
-using B_Rock.Models.Calendar;
 using B_Rock.Models.Reservation;
 using B_Rock.Services;
 using Microsoft.AspNetCore.Authorization;
