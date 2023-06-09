@@ -67,6 +67,7 @@ namespace B_Rock.Controllers
         public IActionResult Index(int id)
         {
             Concert toDeleteConcert = _concertService.GetById(id);
+            toDeleteConcert.IsDeleted = true;
             _concertService.RemoveConcert(toDeleteConcert);
             return RedirectToAction("Index");
         }

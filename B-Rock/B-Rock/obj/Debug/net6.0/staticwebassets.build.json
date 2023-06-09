@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5vhVCtV9ADgFfu741vyfHYjEIoDI3vvXRaJtEEdsA4M=",
+  "Hash": "jFgb4eqqX1UAYYwhzhI0bHktJfdIMQcutCx7zd9nomw=",
   "Source": "B-Rock",
   "BasePath": "_content/B-Rock",
   "Mode": "Default",
@@ -1411,6 +1411,23 @@
       "OriginalItemSpec": "wwwroot\\img\\Artiesten\\Mark-De-Merlier.jpg"
     },
     {
+      "Identity": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Mylan-Coudeville_10c7.jpg",
+      "SourceId": "B-Rock",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\",
+      "BasePath": "_content/B-Rock",
+      "RelativePath": "img/Artiesten/Mylan-Coudeville_10c7.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Artiesten\\Mylan-Coudeville_10c7.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Mylan-Coudeville_1740.jpg",
       "SourceId": "B-Rock",
       "SourceType": "Discovered",
@@ -1664,6 +1681,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\BackgroundImageArtists.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\LifeAndDeath_202c.jpg",
+      "SourceId": "B-Rock",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\",
+      "BasePath": "_content/B-Rock",
+      "RelativePath": "img/Concerts/LifeAndDeath_202c.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Concerts\\LifeAndDeath_202c.jpg"
     },
     {
       "Identity": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\LifeAndDeath_489e.jpg",

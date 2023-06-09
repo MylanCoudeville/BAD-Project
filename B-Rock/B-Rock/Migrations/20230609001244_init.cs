@@ -64,7 +64,8 @@ namespace B_Rock.Migrations
                     DateAndTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Price = table.Column<double>(type: "float", nullable: false),
                     UniqueURL = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ExternLink = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ExternLink = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -95,6 +96,7 @@ namespace B_Rock.Migrations
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Message = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserId = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Created = table.Column<DateTime>(type: "datetime2", nullable: false),
                     IsAnswered = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
@@ -113,7 +115,8 @@ namespace B_Rock.Migrations
                     Role = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UniqueURL = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    UniqueURL = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -260,7 +263,8 @@ namespace B_Rock.Migrations
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Role = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     InstrumentId = table.Column<int>(type: "int", nullable: false),
-                    UniqueURL = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    UniqueURL = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -275,13 +279,13 @@ namespace B_Rock.Migrations
 
             migrationBuilder.InsertData(
                 table: "Concerts",
-                columns: new[] { "Id", "City", "Country", "DateAndTime", "ExternLink", "Location", "PerformedBy", "Price", "Title", "UniqueURL" },
+                columns: new[] { "Id", "City", "Country", "DateAndTime", "ExternLink", "IsDeleted", "Location", "PerformedBy", "Price", "Title", "UniqueURL" },
                 values: new object[,]
                 {
-                    { 1, "Antwerp", "BE", new DateTime(2023, 5, 25, 20, 0, 0, 0, DateTimeKind.Unspecified), "https://b-rock.org/project/mozart-mass-3/", "De Singel", "Haydn & Mozart with Vox Luminis XL", 15.0, "Mozart Mass", "Mozart-Mass.jpg" },
-                    { 2, "Rouen", "FR", new DateTime(2023, 6, 1, 20, 0, 0, 0, DateTimeKind.Unspecified), "https://b-rock.org/project/tears-of-melancholy-2/", "Chapelle Corneille", "Antoine Tamestit & B'Rock", 25.0, "Tears Of Melancholy", "Tears-Of-Melancholy.jpg" },
-                    { 3, "Stockholm", "SE", new DateTime(2023, 6, 2, 20, 0, 0, 0, DateTimeKind.Unspecified), "https://b-rock.org/project/monteverdis-journey/", "The German Church", "B’Rock Orchestra & Vocal Consort", 35.0, "The Travels Of Monteverdi", "The-Travels-Of-Monteverdi.jpg" },
-                    { 4, "Reims", "FR", new DateTime(2023, 6, 24, 20, 0, 0, 0, DateTimeKind.Unspecified), "https://b-rock.org/project/un-nouveau-vent/", "Opéra de Raims", "Fin de siècle à Paris", 45.0, "Un Nouveau Vent", "Un-Nouveau-Vent.jpg" }
+                    { 1, "Antwerp", "BE", new DateTime(2023, 5, 25, 20, 0, 0, 0, DateTimeKind.Unspecified), "https://b-rock.org/project/mozart-mass-3/", false, "De Singel", "Haydn & Mozart with Vox Luminis XL", 15.0, "Mozart Mass", "Mozart-Mass.jpg" },
+                    { 2, "Rouen", "FR", new DateTime(2023, 6, 1, 20, 0, 0, 0, DateTimeKind.Unspecified), "https://b-rock.org/project/tears-of-melancholy-2/", false, "Chapelle Corneille", "Antoine Tamestit & B'Rock", 25.0, "Tears Of Melancholy", "Tears-Of-Melancholy.jpg" },
+                    { 3, "Stockholm", "SE", new DateTime(2023, 6, 2, 20, 0, 0, 0, DateTimeKind.Unspecified), "https://b-rock.org/project/monteverdis-journey/", false, "The German Church", "B’Rock Orchestra & Vocal Consort", 35.0, "The Travels Of Monteverdi", "The-Travels-Of-Monteverdi.jpg" },
+                    { 4, "Reims", "FR", new DateTime(2023, 6, 24, 20, 0, 0, 0, DateTimeKind.Unspecified), "https://b-rock.org/project/un-nouveau-vent/", false, "Opéra de Raims", "Fin de siècle à Paris", 45.0, "Un Nouveau Vent", "Un-Nouveau-Vent.jpg" }
                 });
 
             migrationBuilder.InsertData(
@@ -306,58 +310,58 @@ namespace B_Rock.Migrations
 
             migrationBuilder.InsertData(
                 table: "Staff",
-                columns: new[] { "Id", "Email", "FirstName", "LastName", "PhoneNumber", "Role", "UniqueURL" },
+                columns: new[] { "Id", "Email", "FirstName", "IsDeleted", "LastName", "PhoneNumber", "Role", "UniqueURL" },
                 values: new object[,]
                 {
-                    { 1, "aglaja@b-rock.org", "Aglaja", "Thiesen", "+32 471 69 52 19", "General Direction", "Aglaja-Thiesen.jpg" },
-                    { 2, "albert@b-rock.org", "Albert", "Edelman", "+32 499 93 48 23", "Artistic Direction", "Albert-Edelman.jpg" },
-                    { 3, "davina@b-rock.org", "Davina", "Van Belle", "+32 477 98 04 28", "Business Direction", "Davina-VanBelle.jpg" },
-                    { 4, "claire@b-rock.org", "Claire", "Desmedt", "+32 494 48 79 62", "Administration & Participation", "Claire-Desmedt.jpg" },
-                    { 5, "tom@b-rock.org", "Tom", "Devaere", null, "Casting Coordination & Music Libary", "Tom-Devaere.jpg" },
-                    { 6, "sharon@b-rock.org", "Sharon", "Buffel", "+32 491 25 22 33", "Communication, Planning & Production", "Sharon-Buffel.jpg" },
-                    { 7, "toon@b-rock.org", "Toon", "Vannieuwenhuyse", "+32 476 41 79 05", "Production & Libary", "Toon-Vannieuwenhuyse.jpg" },
-                    { 8, "laurent@b-rock.org", "Laurent", "Langlois", "+33 610 27 11 38", "International Relations", "Laurent-Langlois.jpg" }
+                    { 1, "aglaja@b-rock.org", "Aglaja", false, "Thiesen", "+32 471 69 52 19", "General Direction", "Aglaja-Thiesen.jpg" },
+                    { 2, "albert@b-rock.org", "Albert", false, "Edelman", "+32 499 93 48 23", "Artistic Direction", "Albert-Edelman.jpg" },
+                    { 3, "davina@b-rock.org", "Davina", false, "Van Belle", "+32 477 98 04 28", "Business Direction", "Davina-VanBelle.jpg" },
+                    { 4, "claire@b-rock.org", "Claire", false, "Desmedt", "+32 494 48 79 62", "Administration & Participation", "Claire-Desmedt.jpg" },
+                    { 5, "tom@b-rock.org", "Tom", false, "Devaere", null, "Casting Coordination & Music Libary", "Tom-Devaere.jpg" },
+                    { 6, "sharon@b-rock.org", "Sharon", false, "Buffel", "+32 491 25 22 33", "Communication, Planning & Production", "Sharon-Buffel.jpg" },
+                    { 7, "toon@b-rock.org", "Toon", false, "Vannieuwenhuyse", "+32 476 41 79 05", "Production & Libary", "Toon-Vannieuwenhuyse.jpg" },
+                    { 8, "laurent@b-rock.org", "Laurent", false, "Langlois", "+33 610 27 11 38", "International Relations", "Laurent-Langlois.jpg" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Artists",
-                columns: new[] { "Id", "FirstName", "InstrumentId", "LastName", "Role", "UniqueURL" },
+                columns: new[] { "Id", "FirstName", "InstrumentId", "IsDeleted", "LastName", "Role", "UniqueURL" },
                 values: new object[,]
                 {
-                    { 1, "Benny", 1, "Aghassi", "Shared principal", "Benny-Aghassi.jpg" },
-                    { 2, "Tomasz", 1, "Wesolowski", "Shared principal", "Tomasz-Aghassi.jpg" },
-                    { 3, "Julien", 2, "Barre", "Shared principal", "Julien-Barre.jpg" },
-                    { 4, "Rebecca", 2, "Rosen", "Shared principal", "Rebecca-Rosen.jpg" },
-                    { 5, "Vincenzo", 3, "Casale", "Shared principal", "Vincenzo-Casale.jpg" },
-                    { 6, "Jean-Philippe", 3, "Ponchin", null, "Jean-Philippe-Ponchin.jpg" },
-                    { 7, "Cecilia", 4, "Bernardini", "Acting concertmaster", null },
-                    { 8, "Evgeny", 4, "Sviridov", "Acting concertmaster", "Evgeny-Sviridov.jpg" },
-                    { 9, "Tom", 5, "Devaere", "Principal", "Tom-Devaere.jpg" },
-                    { 10, "Elise", 5, "Christiaens", null, "Elise-Christiaens.jpg" },
-                    { 11, "Karl", 6, "Nyhlin", null, "Karl-Nyhlin.jpg" },
-                    { 12, "Jean-Marc", 7, "Philippe", "Acting principal", "Jean-Marc-Philippe.jpg" },
-                    { 13, "Stefaan", 7, "Verdegem", null, "Stefaan-Verdegem.jpg" },
-                    { 14, "Bart", 8, "Aerbeydt", "Shared principal", "Bart-Aerbeydt.jpg" },
-                    { 15, "Jeroen", 8, "Billiet", "Shared principal", null },
-                    { 16, "Mark", 8, "De Merlier", null, "Mark-De-Merlier.jpg" },
-                    { 17, "Andreas", 9, "Küppers", null, "Andres-Küppers.jpg" },
-                    { 18, "Jan", 10, "Huylebroeck", "Shared principal", "Jan-Huylebroeck.jpg" },
-                    { 19, "Koen", 10, "Plaetinck", "Shared principal", null },
-                    { 20, "Tami", 11, "Krausz", "Principal", "Tami-Krausz.jpg" },
-                    { 21, "Sien", 11, "Huybrechts", null, "Sien-Huybrechts.jpg" },
-                    { 22, "Raquel", 12, "Massadas", "Principal", "Raquel-Massadas.jpg" },
-                    { 23, "Luc", 12, "Gysbregts", null, "Luc-Gysbregts.jpg" },
-                    { 24, "Manuela", 12, "Bucher", null, "Manuela-Bucher.jpg" },
-                    { 25, "David", 13, "Wish", null, "David-Wish.jpg" },
-                    { 26, "Sara", 13, "Decorso", null, "Sara-Decorso.jpg" },
-                    { 27, "Ellie", 13, "Nimeroski", null, "Ellie-Nimeroski.jpg" },
-                    { 28, "Jivka", 13, "Kaltcheva", null, "Jivka-Kaltcheva.jpg" },
-                    { 29, "Liesbeth", 13, "Nijs", null, "Liesbeth-Nijs.jpg" },
-                    { 30, "Madoka", 13, "Nakamaru", null, "Madoka-Nakamaru.jpg" },
-                    { 31, "Ortwin", 13, "Lowyck", null, "Ortwin-Lowyck.jpg" },
-                    { 32, "Shiho", 13, "Ono", null, "Shiho-Ono.jpg" },
-                    { 33, "Rebecca", 13, "Huber", null, "Rebecca-Huber.jpg" },
-                    { 34, "Yukie", 13, "Yamaguchi", null, "Yukie-Yamaguchi.jpg" }
+                    { 1, "Benny", 1, false, "Aghassi", "Shared principal", "Benny-Aghassi.jpg" },
+                    { 2, "Tomasz", 1, false, "Wesolowski", "Shared principal", "Tomasz-Aghassi.jpg" },
+                    { 3, "Julien", 2, false, "Barre", "Shared principal", "Julien-Barre.jpg" },
+                    { 4, "Rebecca", 2, false, "Rosen", "Shared principal", "Rebecca-Rosen.jpg" },
+                    { 5, "Vincenzo", 3, false, "Casale", "Shared principal", "Vincenzo-Casale.jpg" },
+                    { 6, "Jean-Philippe", 3, false, "Ponchin", null, "Jean-Philippe-Ponchin.jpg" },
+                    { 7, "Cecilia", 4, false, "Bernardini", "Acting concertmaster", null },
+                    { 8, "Evgeny", 4, false, "Sviridov", "Acting concertmaster", "Evgeny-Sviridov.jpg" },
+                    { 9, "Tom", 5, false, "Devaere", "Principal", "Tom-Devaere.jpg" },
+                    { 10, "Elise", 5, false, "Christiaens", null, "Elise-Christiaens.jpg" },
+                    { 11, "Karl", 6, false, "Nyhlin", null, "Karl-Nyhlin.jpg" },
+                    { 12, "Jean-Marc", 7, false, "Philippe", "Acting principal", "Jean-Marc-Philippe.jpg" },
+                    { 13, "Stefaan", 7, false, "Verdegem", null, "Stefaan-Verdegem.jpg" },
+                    { 14, "Bart", 8, false, "Aerbeydt", "Shared principal", "Bart-Aerbeydt.jpg" },
+                    { 15, "Jeroen", 8, false, "Billiet", "Shared principal", null },
+                    { 16, "Mark", 8, false, "De Merlier", null, "Mark-De-Merlier.jpg" },
+                    { 17, "Andreas", 9, false, "Küppers", null, "Andres-Küppers.jpg" },
+                    { 18, "Jan", 10, false, "Huylebroeck", "Shared principal", "Jan-Huylebroeck.jpg" },
+                    { 19, "Koen", 10, false, "Plaetinck", "Shared principal", null },
+                    { 20, "Tami", 11, false, "Krausz", "Principal", "Tami-Krausz.jpg" },
+                    { 21, "Sien", 11, false, "Huybrechts", null, "Sien-Huybrechts.jpg" },
+                    { 22, "Raquel", 12, false, "Massadas", "Principal", "Raquel-Massadas.jpg" },
+                    { 23, "Luc", 12, false, "Gysbregts", null, "Luc-Gysbregts.jpg" },
+                    { 24, "Manuela", 12, false, "Bucher", null, "Manuela-Bucher.jpg" },
+                    { 25, "David", 13, false, "Wish", null, "David-Wish.jpg" },
+                    { 26, "Sara", 13, false, "Decorso", null, "Sara-Decorso.jpg" },
+                    { 27, "Ellie", 13, false, "Nimeroski", null, "Ellie-Nimeroski.jpg" },
+                    { 28, "Jivka", 13, false, "Kaltcheva", null, "Jivka-Kaltcheva.jpg" },
+                    { 29, "Liesbeth", 13, false, "Nijs", null, "Liesbeth-Nijs.jpg" },
+                    { 30, "Madoka", 13, false, "Nakamaru", null, "Madoka-Nakamaru.jpg" },
+                    { 31, "Ortwin", 13, false, "Lowyck", null, "Ortwin-Lowyck.jpg" },
+                    { 32, "Shiho", 13, false, "Ono", null, "Shiho-Ono.jpg" },
+                    { 33, "Rebecca", 13, false, "Huber", null, "Rebecca-Huber.jpg" },
+                    { 34, "Yukie", 13, false, "Yamaguchi", null, "Yukie-Yamaguchi.jpg" }
                 });
 
             migrationBuilder.CreateIndex(

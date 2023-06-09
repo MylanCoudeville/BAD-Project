@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\img\\Artiesten\\Mark-De-Merlier.jpg"
     },
     {
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Mylan-Coudeville_10c7.jpg",
+      "PackagePath": "staticwebassets\\img\\Artiesten\\Mylan-Coudeville_10c7.jpg"
+    },
+    {
       "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Artiesten\\Mylan-Coudeville_1740.jpg",
       "PackagePath": "staticwebassets\\img\\Artiesten\\Mylan-Coudeville_1740.jpg"
     },
@@ -143,6 +147,10 @@
     {
       "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\BackgroundImageArtists.jpg",
       "PackagePath": "staticwebassets\\img\\BackgroundImageArtists.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\LifeAndDeath_202c.jpg",
+      "PackagePath": "staticwebassets\\img\\Concerts\\LifeAndDeath_202c.jpg"
     },
     {
       "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\LifeAndDeath_489e.jpg",

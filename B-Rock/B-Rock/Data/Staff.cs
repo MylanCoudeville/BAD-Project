@@ -15,5 +15,6 @@ namespace B_Rock.Data
         [NotMapped]
         public IFormFile? Image { get; set; }
         public string? UniqueURL { get; set; }
+        public bool IsDeleted { get; set; } = false;
     }
 }

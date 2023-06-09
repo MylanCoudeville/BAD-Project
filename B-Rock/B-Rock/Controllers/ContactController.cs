@@ -104,13 +104,13 @@ namespace B_Rock.Controllers
             {
                 Staff newStaff = new Staff()
                 {
-                    FirstName= viewModel.FirstName,
-                    LastName= viewModel.LastName,
+                    FirstName = viewModel.FirstName,
+                    LastName = viewModel.LastName,
                     Role = viewModel.Role,
                     PhoneNumber = viewModel.PhoneNumber,
-                    Email= viewModel.Email
+                    Email = viewModel.Email
                 };
-                if (viewModel.Image!= null)
+                if (viewModel.Image != null)
                 {
                     string uniqueFileName = GetUniqueFileName(viewModel.Image.FileName);
                     string uploads = Path.Combine(_hostEnvironment.WebRootPath, "img/Staff");
@@ -139,7 +139,7 @@ namespace B_Rock.Controllers
                     Email = viewModel.Email,
                     UniqueURL = viewModel.UniqueURL
                 };
-                if (viewModel.Image!= null)
+                if (viewModel.Image != null)
                 {
                     string uniqueFileName = GetUniqueFileName(viewModel.Image.FileName);
                     string uploads = Path.Combine(_hostEnvironment.WebRootPath, "img/Staff");
@@ -156,9 +156,10 @@ namespace B_Rock.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeleteStaff(DeleteStaffViewModel viewModel)
         {
-                Staff toDelete = _staffService.GetById(viewModel.Id);
-                _staffService.Delete(toDelete);
-                return RedirectToAction("Index");
+            Staff toDelete = _staffService.GetById(viewModel.Id);
+            toDelete.IsDeleted= true;
+            _staffService.Delete(toDelete);
+            return RedirectToAction("Index");
         }
         private string GetUniqueFileName(string fileName)
         {

@@ -18,27 +18,28 @@ namespace B_Rock.Services
 
         public void Delete(Staff staff)
         {
-            _dbContext.Staff.Remove(staff);
+            _dbContext.Staff.Update(staff);
             _dbContext.SaveChanges();
         }
 
         public IEnumerable<Staff> GetAll()
         {
-            return _dbContext.Staff.Select(s => new Staff
-            {
-                Id = s.Id,
-                FirstName = s.FirstName,
-                LastName = s.LastName,
-                Role = s.Role,
-                Email = s.Email,
-                PhoneNumber = s.PhoneNumber,
-                UniqueURL = s.UniqueURL
-            }).ToList();
+            return _dbContext.Staff.Where(s => s.IsDeleted == false)
+                .Select(s => new Staff
+                {
+                    Id = s.Id,
+                    FirstName = s.FirstName,
+                    LastName = s.LastName,
+                    Role = s.Role,
+                    Email = s.Email,
+                    PhoneNumber = s.PhoneNumber,
+                    UniqueURL = s.UniqueURL
+                }).ToList();
         }
 
         public Staff GetById(int id)
         {
-            return _dbContext.Staff.Where(s => s.Id == id).FirstOrDefault();
+            return _dbContext.Staff.Where(s => s.Id == id && s.IsDeleted == false).FirstOrDefault();
         }
 
         public void Update(Staff staff)

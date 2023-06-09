@@ -31,6 +31,7 @@ namespace B_Rock.Controllers
         public IActionResult Index(int id)
         {
             Artist deleteArtist = _artistService.GetById(id);
+            deleteArtist.IsDeleted = true;
             _artistService.DeleteArtist(deleteArtist);
             return RedirectToAction("Index");
         }

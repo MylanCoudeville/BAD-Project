@@ -16,5 +16,6 @@ namespace B_Rock.Data
         public double Price { get; set; }
         public string UniqueURL { get; set; }
         public string ExternLink { get; set; }
+        public bool IsDeleted { get; set; } = false;
     }
 }

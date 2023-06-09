@@ -18,59 +18,64 @@ namespace B_Rock.Services
 
         public IEnumerable<Concert> GetAll()
         {
-            return _dbContext.Concerts.Select(c => new Concert()
-            {
-                Id = c.Id,
-                Title = c.Title,
-                PerformedBy = c.PerformedBy,
-                Location = c.Location,
-                City = c.City,
-                Country = c.Country,
-                DateAndTime = c.DateAndTime,
-                Price = c.Price,
-                UniqueURL = c.UniqueURL,
-                ExternLink = c.ExternLink
-            }).ToList();
+            return _dbContext.Concerts.Where(c => c.IsDeleted == false)
+                .Select(c => new Concert()
+                {
+                    Id = c.Id,
+                    Title = c.Title,
+                    PerformedBy = c.PerformedBy,
+                    Location = c.Location,
+                    City = c.City,
+                    Country = c.Country,
+                    DateAndTime = c.DateAndTime,
+                    Price = c.Price,
+                    UniqueURL = c.UniqueURL,
+                    ExternLink = c.ExternLink,
+                    IsDeleted = c.IsDeleted
+                }).ToList();
         }
 
         public IEnumerable<Concert> GetAllInFuture()
         {
-            return _dbContext.Concerts.Where(c => c.DateAndTime.Date >= DateTime.Now)
+            return _dbContext.Concerts.Where(c => c.DateAndTime.Date >= DateTime.Now && c.IsDeleted == false)
                 .Select(c => new Concert()
-            {
-                Id = c.Id,
-                Title = c.Title,
-                PerformedBy = c.PerformedBy,
-                Location = c.Location,
-                City = c.City,
-                Country = c.Country,
-                DateAndTime = c.DateAndTime,
-                Price = c.Price,
-                UniqueURL = c.UniqueURL,
-                ExternLink = c.ExternLink
-            }).ToList();
+                {
+                    Id = c.Id,
+                    Title = c.Title,
+                    PerformedBy = c.PerformedBy,
+                    Location = c.Location,
+                    City = c.City,
+                    Country = c.Country,
+                    DateAndTime = c.DateAndTime,
+                    Price = c.Price,
+                    UniqueURL = c.UniqueURL,
+                    ExternLink = c.ExternLink,
+                    IsDeleted = c.IsDeleted
+                }).ToList();
         }
 
         public Concert GetById(int Id)
         {
-            return _dbContext.Concerts.Where(c => c.Id == Id).Select(c => new Concert()
-            {
-                Id = c.Id,
-                Title = c.Title,
-                PerformedBy = c.PerformedBy,
-                Location = c.Location,
-                City = c.City,
-                Country = c.Country,
-                DateAndTime = c.DateAndTime,
-                Price = c.Price,
-                UniqueURL = c.UniqueURL,
-                ExternLink = c.ExternLink
-            }).FirstOrDefault();
+            return _dbContext.Concerts.Where(c => c.Id == Id && c.IsDeleted == false)
+                .Select(c => new Concert()
+                {
+                    Id = c.Id,
+                    Title = c.Title,
+                    PerformedBy = c.PerformedBy,
+                    Location = c.Location,
+                    City = c.City,
+                    Country = c.Country,
+                    DateAndTime = c.DateAndTime,
+                    Price = c.Price,
+                    UniqueURL = c.UniqueURL,
+                    ExternLink = c.ExternLink,
+                    IsDeleted = c.IsDeleted
+                }).FirstOrDefault();
         }
 
         public void RemoveConcert(Concert concert)
         {
-            _dbContext.Concerts.Remove(concert);
+            _dbContext.Concerts.Update(concert);
             _dbContext.SaveChanges();
         }
 

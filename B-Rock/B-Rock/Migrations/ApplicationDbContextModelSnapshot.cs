@@ -37,6 +37,9 @@ namespace B_Rock.Migrations
                     b.Property<int>("InstrumentId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -59,6 +62,7 @@ namespace B_Rock.Migrations
                             Id = 1,
                             FirstName = "Benny",
                             InstrumentId = 1,
+                            IsDeleted = false,
                             LastName = "Aghassi",
                             Role = "Shared principal",
                             UniqueURL = "Benny-Aghassi.jpg"
@@ -68,6 +72,7 @@ namespace B_Rock.Migrations
                             Id = 2,
                             FirstName = "Tomasz",
                             InstrumentId = 1,
+                            IsDeleted = false,
                             LastName = "Wesolowski",
                             Role = "Shared principal",
                             UniqueURL = "Tomasz-Aghassi.jpg"
@@ -77,6 +82,7 @@ namespace B_Rock.Migrations
                             Id = 3,
                             FirstName = "Julien",
                             InstrumentId = 2,
+                            IsDeleted = false,
                             LastName = "Barre",
                             Role = "Shared principal",
                             UniqueURL = "Julien-Barre.jpg"
@@ -86,6 +92,7 @@ namespace B_Rock.Migrations
                             Id = 4,
                             FirstName = "Rebecca",
                             InstrumentId = 2,
+                            IsDeleted = false,
                             LastName = "Rosen",
                             Role = "Shared principal",
                             UniqueURL = "Rebecca-Rosen.jpg"
@@ -95,6 +102,7 @@ namespace B_Rock.Migrations
                             Id = 5,
                             FirstName = "Vincenzo",
                             InstrumentId = 3,
+                            IsDeleted = false,
                             LastName = "Casale",
                             Role = "Shared principal",
                             UniqueURL = "Vincenzo-Casale.jpg"
@@ -104,6 +112,7 @@ namespace B_Rock.Migrations
                             Id = 6,
                             FirstName = "Jean-Philippe",
                             InstrumentId = 3,
+                            IsDeleted = false,
                             LastName = "Ponchin",
                             UniqueURL = "Jean-Philippe-Ponchin.jpg"
                         },
@@ -112,6 +121,7 @@ namespace B_Rock.Migrations
                             Id = 7,
                             FirstName = "Cecilia",
                             InstrumentId = 4,
+                            IsDeleted = false,
                             LastName = "Bernardini",
                             Role = "Acting concertmaster"
                         },
@@ -120,6 +130,7 @@ namespace B_Rock.Migrations
                             Id = 8,
                             FirstName = "Evgeny",
                             InstrumentId = 4,
+                            IsDeleted = false,
                             LastName = "Sviridov",
                             Role = "Acting concertmaster",
                             UniqueURL = "Evgeny-Sviridov.jpg"
@@ -129,6 +140,7 @@ namespace B_Rock.Migrations
                             Id = 9,
                             FirstName = "Tom",
                             InstrumentId = 5,
+                            IsDeleted = false,
                             LastName = "Devaere",
                             Role = "Principal",
                             UniqueURL = "Tom-Devaere.jpg"
@@ -138,6 +150,7 @@ namespace B_Rock.Migrations
                             Id = 10,
                             FirstName = "Elise",
                             InstrumentId = 5,
+                            IsDeleted = false,
                             LastName = "Christiaens",
                             UniqueURL = "Elise-Christiaens.jpg"
                         },
@@ -146,6 +159,7 @@ namespace B_Rock.Migrations
                             Id = 11,
                             FirstName = "Karl",
                             InstrumentId = 6,
+                            IsDeleted = false,
                             LastName = "Nyhlin",
                             UniqueURL = "Karl-Nyhlin.jpg"
                         },
@@ -154,6 +168,7 @@ namespace B_Rock.Migrations
                             Id = 12,
                             FirstName = "Jean-Marc",
                             InstrumentId = 7,
+                            IsDeleted = false,
                             LastName = "Philippe",
                             Role = "Acting principal",
                             UniqueURL = "Jean-Marc-Philippe.jpg"
@@ -163,6 +178,7 @@ namespace B_Rock.Migrations
                             Id = 13,
                             FirstName = "Stefaan",
                             InstrumentId = 7,
+                            IsDeleted = false,
                             LastName = "Verdegem",
                             UniqueURL = "Stefaan-Verdegem.jpg"
                         },
@@ -171,6 +187,7 @@ namespace B_Rock.Migrations
                             Id = 14,
                             FirstName = "Bart",
                             InstrumentId = 8,
+                            IsDeleted = false,
                             LastName = "Aerbeydt",
                             Role = "Shared principal",
                             UniqueURL = "Bart-Aerbeydt.jpg"
@@ -180,6 +197,7 @@ namespace B_Rock.Migrations
                             Id = 15,
                             FirstName = "Jeroen",
                             InstrumentId = 8,
+                            IsDeleted = false,
                             LastName = "Billiet",
                             Role = "Shared principal"
                         },
@@ -188,6 +206,7 @@ namespace B_Rock.Migrations
                             Id = 16,
                             FirstName = "Mark",
                             InstrumentId = 8,
+                            IsDeleted = false,
                             LastName = "De Merlier",
                             UniqueURL = "Mark-De-Merlier.jpg"
                         },
@@ -196,6 +215,7 @@ namespace B_Rock.Migrations
                             Id = 17,
                             FirstName = "Andreas",
                             InstrumentId = 9,
+                            IsDeleted = false,
                             LastName = "Küppers",
                             UniqueURL = "Andres-Küppers.jpg"
                         },
@@ -204,6 +224,7 @@ namespace B_Rock.Migrations
                             Id = 18,
                             FirstName = "Jan",
                             InstrumentId = 10,
+                            IsDeleted = false,
                             LastName = "Huylebroeck",
                             Role = "Shared principal",
                             UniqueURL = "Jan-Huylebroeck.jpg"
@@ -213,6 +234,7 @@ namespace B_Rock.Migrations
                             Id = 19,
                             FirstName = "Koen",
                             InstrumentId = 10,
+                            IsDeleted = false,
                             LastName = "Plaetinck",
                             Role = "Shared principal"
                         },
@@ -221,6 +243,7 @@ namespace B_Rock.Migrations
                             Id = 20,
                             FirstName = "Tami",
                             InstrumentId = 11,
+                            IsDeleted = false,
                             LastName = "Krausz",
                             Role = "Principal",
                             UniqueURL = "Tami-Krausz.jpg"
@@ -230,6 +253,7 @@ namespace B_Rock.Migrations
                             Id = 21,
                             FirstName = "Sien",
                             InstrumentId = 11,
+                            IsDeleted = false,
                             LastName = "Huybrechts",
                             UniqueURL = "Sien-Huybrechts.jpg"
                         },
@@ -238,6 +262,7 @@ namespace B_Rock.Migrations
                             Id = 22,
                             FirstName = "Raquel",
                             InstrumentId = 12,
+                            IsDeleted = false,
                             LastName = "Massadas",
                             Role = "Principal",
                             UniqueURL = "Raquel-Massadas.jpg"
@@ -247,6 +272,7 @@ namespace B_Rock.Migrations
                             Id = 23,
                             FirstName = "Luc",
                             InstrumentId = 12,
+                            IsDeleted = false,
                             LastName = "Gysbregts",
                             UniqueURL = "Luc-Gysbregts.jpg"
                         },
@@ -255,6 +281,7 @@ namespace B_Rock.Migrations
                             Id = 24,
                             FirstName = "Manuela",
                             InstrumentId = 12,
+                            IsDeleted = false,
                             LastName = "Bucher",
                             UniqueURL = "Manuela-Bucher.jpg"
                         },
@@ -263,6 +290,7 @@ namespace B_Rock.Migrations
                             Id = 25,
                             FirstName = "David",
                             InstrumentId = 13,
+                            IsDeleted = false,
                             LastName = "Wish",
                             UniqueURL = "David-Wish.jpg"
                         },
@@ -271,6 +299,7 @@ namespace B_Rock.Migrations
                             Id = 26,
                             FirstName = "Sara",
                             InstrumentId = 13,
+                            IsDeleted = false,
                             LastName = "Decorso",
                             UniqueURL = "Sara-Decorso.jpg"
                         },
@@ -279,6 +308,7 @@ namespace B_Rock.Migrations
                             Id = 27,
                             FirstName = "Ellie",
                             InstrumentId = 13,
+                            IsDeleted = false,
                             LastName = "Nimeroski",
                             UniqueURL = "Ellie-Nimeroski.jpg"
                         },
@@ -287,6 +317,7 @@ namespace B_Rock.Migrations
                             Id = 28,
                             FirstName = "Jivka",
                             InstrumentId = 13,
+                            IsDeleted = false,
                             LastName = "Kaltcheva",
                             UniqueURL = "Jivka-Kaltcheva.jpg"
                         },
@@ -295,6 +326,7 @@ namespace B_Rock.Migrations
                             Id = 29,
                             FirstName = "Liesbeth",
                             InstrumentId = 13,
+                            IsDeleted = false,
                             LastName = "Nijs",
                             UniqueURL = "Liesbeth-Nijs.jpg"
                         },
@@ -303,6 +335,7 @@ namespace B_Rock.Migrations
                             Id = 30,
                             FirstName = "Madoka",
                             InstrumentId = 13,
+                            IsDeleted = false,
                             LastName = "Nakamaru",
                             UniqueURL = "Madoka-Nakamaru.jpg"
                         },
@@ -311,6 +344,7 @@ namespace B_Rock.Migrations
                             Id = 31,
                             FirstName = "Ortwin",
                             InstrumentId = 13,
+                            IsDeleted = false,
                             LastName = "Lowyck",
                             UniqueURL = "Ortwin-Lowyck.jpg"
                         },
@@ -319,6 +353,7 @@ namespace B_Rock.Migrations
                             Id = 32,
                             FirstName = "Shiho",
                             InstrumentId = 13,
+                            IsDeleted = false,
                             LastName = "Ono",
                             UniqueURL = "Shiho-Ono.jpg"
                         },
@@ -327,6 +362,7 @@ namespace B_Rock.Migrations
                             Id = 33,
                             FirstName = "Rebecca",
                             InstrumentId = 13,
+                            IsDeleted = false,
                             LastName = "Huber",
                             UniqueURL = "Rebecca-Huber.jpg"
                         },
@@ -335,6 +371,7 @@ namespace B_Rock.Migrations
                             Id = 34,
                             FirstName = "Yukie",
                             InstrumentId = 13,
+                            IsDeleted = false,
                             LastName = "Yamaguchi",
                             UniqueURL = "Yukie-Yamaguchi.jpg"
                         });
@@ -436,6 +473,9 @@ namespace B_Rock.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Location")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -467,6 +507,7 @@ namespace B_Rock.Migrations
                             Country = "BE",
                             DateAndTime = new DateTime(2023, 5, 25, 20, 0, 0, 0, DateTimeKind.Unspecified),
                             ExternLink = "https://b-rock.org/project/mozart-mass-3/",
+                            IsDeleted = false,
                             Location = "De Singel",
                             PerformedBy = "Haydn & Mozart with Vox Luminis XL",
                             Price = 15.0,
@@ -480,6 +521,7 @@ namespace B_Rock.Migrations
                             Country = "FR",
                             DateAndTime = new DateTime(2023, 6, 1, 20, 0, 0, 0, DateTimeKind.Unspecified),
                             ExternLink = "https://b-rock.org/project/tears-of-melancholy-2/",
+                            IsDeleted = false,
                             Location = "Chapelle Corneille",
                             PerformedBy = "Antoine Tamestit & B'Rock",
                             Price = 25.0,
@@ -493,6 +535,7 @@ namespace B_Rock.Migrations
                             Country = "SE",
                             DateAndTime = new DateTime(2023, 6, 2, 20, 0, 0, 0, DateTimeKind.Unspecified),
                             ExternLink = "https://b-rock.org/project/monteverdis-journey/",
+                            IsDeleted = false,
                             Location = "The German Church",
                             PerformedBy = "B’Rock Orchestra & Vocal Consort",
                             Price = 35.0,
@@ -506,6 +549,7 @@ namespace B_Rock.Migrations
                             Country = "FR",
                             DateAndTime = new DateTime(2023, 6, 24, 20, 0, 0, 0, DateTimeKind.Unspecified),
                             ExternLink = "https://b-rock.org/project/un-nouveau-vent/",
+                            IsDeleted = false,
                             Location = "Opéra de Raims",
                             PerformedBy = "Fin de siècle à Paris",
                             Price = 45.0,
@@ -652,6 +696,9 @@ namespace B_Rock.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -675,6 +722,7 @@ namespace B_Rock.Migrations
                             Id = 1,
                             Email = "aglaja@b-rock.org",
                             FirstName = "Aglaja",
+                            IsDeleted = false,
                             LastName = "Thiesen",
                             PhoneNumber = "+32 471 69 52 19",
                             Role = "General Direction",
@@ -685,6 +733,7 @@ namespace B_Rock.Migrations
                             Id = 2,
                             Email = "albert@b-rock.org",
                             FirstName = "Albert",
+                            IsDeleted = false,
                             LastName = "Edelman",
                             PhoneNumber = "+32 499 93 48 23",
                             Role = "Artistic Direction",
@@ -695,6 +744,7 @@ namespace B_Rock.Migrations
                             Id = 3,
                             Email = "davina@b-rock.org",
                             FirstName = "Davina",
+                            IsDeleted = false,
                             LastName = "Van Belle",
                             PhoneNumber = "+32 477 98 04 28",
                             Role = "Business Direction",
@@ -705,6 +755,7 @@ namespace B_Rock.Migrations
                             Id = 4,
                             Email = "claire@b-rock.org",
                             FirstName = "Claire",
+                            IsDeleted = false,
                             LastName = "Desmedt",
                             PhoneNumber = "+32 494 48 79 62",
                             Role = "Administration & Participation",
@@ -715,6 +766,7 @@ namespace B_Rock.Migrations
                             Id = 5,
                             Email = "tom@b-rock.org",
                             FirstName = "Tom",
+                            IsDeleted = false,
                             LastName = "Devaere",
                             Role = "Casting Coordination & Music Libary",
                             UniqueURL = "Tom-Devaere.jpg"
@@ -724,6 +776,7 @@ namespace B_Rock.Migrations
                             Id = 6,
                             Email = "sharon@b-rock.org",
                             FirstName = "Sharon",
+                            IsDeleted = false,
                             LastName = "Buffel",
                             PhoneNumber = "+32 491 25 22 33",
                             Role = "Communication, Planning & Production",
@@ -734,6 +787,7 @@ namespace B_Rock.Migrations
                             Id = 7,
                             Email = "toon@b-rock.org",
                             FirstName = "Toon",
+                            IsDeleted = false,
                             LastName = "Vannieuwenhuyse",
                             PhoneNumber = "+32 476 41 79 05",
                             Role = "Production & Libary",
@@ -744,6 +798,7 @@ namespace B_Rock.Migrations
                             Id = 8,
                             Email = "laurent@b-rock.org",
                             FirstName = "Laurent",
+                            IsDeleted = false,
                             LastName = "Langlois",
                             PhoneNumber = "+33 610 27 11 38",
                             Role = "International Relations",

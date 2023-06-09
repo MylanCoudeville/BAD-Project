@@ -19,13 +19,13 @@ namespace B_Rock.Services
 
         public void DeleteArtist(Artist artist)
         {
-            _dbContext.Artists.Remove(artist);
+            _dbContext.Artists.Update(artist);
             _dbContext.SaveChanges();
         }
 
         public Artist GetById(int id)
         {
-            return _dbContext.Artists.Include(a => a.Instrument).Where(a => a.Id == id).Select(a => new Artist
+            return _dbContext.Artists.Include(a => a.Instrument).Where(a => a.Id == id && a.IsDeleted == false).Select(a => new Artist
             {
                 Id = a.Id,
                 FirstName = a.FirstName,
@@ -33,14 +33,15 @@ namespace B_Rock.Services
                 Role = a.Role,
                 Instrument = a.Instrument,
                 InstrumentId = a.InstrumentId,
-                UniqueURL = a.UniqueURL
+                UniqueURL = a.UniqueURL,
+                IsDeleted = a.IsDeleted
             }).FirstOrDefault();
         }
 
         public IEnumerable<Artist> GetByInstrument(int instrumentId)
         {
             return _dbContext.Artists.Include(a => a.Instrument)
-                .Where(a => a.InstrumentId == instrumentId)
+                .Where(a => a.InstrumentId == instrumentId && a.IsDeleted == false)
                 .Select(a => new Artist
                 {
                     Id = a.Id,
@@ -49,7 +50,8 @@ namespace B_Rock.Services
                     Role = a.Role,
                     InstrumentId = a.InstrumentId,
                     Instrument = a.Instrument,
-                    UniqueURL= a.UniqueURL
+                    UniqueURL= a.UniqueURL,
+                    IsDeleted = a.IsDeleted
                 }).ToList();
         }
 
