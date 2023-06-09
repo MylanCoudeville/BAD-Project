@@ -149,12 +149,8 @@
       "PackagePath": "staticwebassets\\img\\BackgroundImageArtists.jpg"
     },
     {
-      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\LifeAndDeath_202c.jpg",
-      "PackagePath": "staticwebassets\\img\\Concerts\\LifeAndDeath_202c.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\LifeAndDeath_489e.jpg",
-      "PackagePath": "staticwebassets\\img\\Concerts\\LifeAndDeath_489e.jpg"
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\Life-And-Death.jpg",
+      "PackagePath": "staticwebassets\\img\\Concerts\\Life-And-Death.jpg"
     },
     {
       "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\Mozart-Mass.jpg",
@@ -163,6 +159,10 @@
     {
       "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\Tears-Of-Melancholy.jpg",
       "PackagePath": "staticwebassets\\img\\Concerts\\Tears-Of-Melancholy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\The-Listeners-Academy.jpg",
+      "PackagePath": "staticwebassets\\img\\Concerts\\The-Listeners-Academy.jpg"
     },
     {
       "Id": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\The-Travels-Of-Monteverdi.jpg",

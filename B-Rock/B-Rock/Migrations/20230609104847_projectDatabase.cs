@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace B_Rock.Migrations
 {
-    public partial class init : Migration
+    public partial class projectDatabase : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -285,7 +285,10 @@ namespace B_Rock.Migrations
                     { 1, "Antwerp", "BE", new DateTime(2023, 5, 25, 20, 0, 0, 0, DateTimeKind.Unspecified), "https://b-rock.org/project/mozart-mass-3/", false, "De Singel", "Haydn & Mozart with Vox Luminis XL", 15.0, "Mozart Mass", "Mozart-Mass.jpg" },
                     { 2, "Rouen", "FR", new DateTime(2023, 6, 1, 20, 0, 0, 0, DateTimeKind.Unspecified), "https://b-rock.org/project/tears-of-melancholy-2/", false, "Chapelle Corneille", "Antoine Tamestit & B'Rock", 25.0, "Tears Of Melancholy", "Tears-Of-Melancholy.jpg" },
                     { 3, "Stockholm", "SE", new DateTime(2023, 6, 2, 20, 0, 0, 0, DateTimeKind.Unspecified), "https://b-rock.org/project/monteverdis-journey/", false, "The German Church", "B’Rock Orchestra & Vocal Consort", 35.0, "The Travels Of Monteverdi", "The-Travels-Of-Monteverdi.jpg" },
-                    { 4, "Reims", "FR", new DateTime(2023, 6, 24, 20, 0, 0, 0, DateTimeKind.Unspecified), "https://b-rock.org/project/un-nouveau-vent/", false, "Opéra de Raims", "Fin de siècle à Paris", 45.0, "Un Nouveau Vent", "Un-Nouveau-Vent.jpg" }
+                    { 4, "Reims", "FR", new DateTime(2023, 6, 24, 20, 0, 0, 0, DateTimeKind.Unspecified), "https://b-rock.org/project/un-nouveau-vent/", false, "Opéra de Raims", "Fin de siècle à Paris", 45.0, "Un Nouveau Vent", "Un-Nouveau-Vent.jpg" },
+                    { 5, "Bonn", "DE", new DateTime(2023, 9, 2, 16, 0, 0, 0, DateTimeKind.Unspecified), "https://b-rock.org/project/life-and-death/", false, "Festival Centre Kreuzkirche", "The great themes of life", 65.0, "Life and Death", "Life-And-Death.jpg" },
+                    { 6, "Bonn", "DE", new DateTime(2023, 9, 8, 19, 30, 0, 0, DateTimeKind.Unspecified), "https://b-rock.org/project/the-listeners-academy-2/", false, "University of Bonn, Aula", "Alexander Melnikov & B'Rock", 50.5, "The Listeners Academy", "The-Listeners-Academy.jpg" },
+                    { 7, "Berlin", "DE", new DateTime(2023, 9, 10, 11, 0, 0, 0, DateTimeKind.Unspecified), "https://b-rock.org/project/the-listeners-academy-2/", false, "University of Bonn, Aula", "Alexander Melnikov & B'Rock", 30.5, "The Listeners Academy", "The-Listeners-Academy.jpg" }
                 });
 
             migrationBuilder.InsertData(

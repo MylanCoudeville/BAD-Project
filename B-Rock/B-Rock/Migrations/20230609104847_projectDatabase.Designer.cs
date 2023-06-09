@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace B_Rock.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230609005711_init")]
-    partial class init
+    [Migration("20230609104847_projectDatabase")]
+    partial class projectDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -557,6 +557,48 @@ namespace B_Rock.Migrations
                             Price = 45.0,
                             Title = "Un Nouveau Vent",
                             UniqueURL = "Un-Nouveau-Vent.jpg"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            City = "Bonn",
+                            Country = "DE",
+                            DateAndTime = new DateTime(2023, 9, 2, 16, 0, 0, 0, DateTimeKind.Unspecified),
+                            ExternLink = "https://b-rock.org/project/life-and-death/",
+                            IsDeleted = false,
+                            Location = "Festival Centre Kreuzkirche",
+                            PerformedBy = "The great themes of life",
+                            Price = 65.0,
+                            Title = "Life and Death",
+                            UniqueURL = "Life-And-Death.jpg"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            City = "Bonn",
+                            Country = "DE",
+                            DateAndTime = new DateTime(2023, 9, 8, 19, 30, 0, 0, DateTimeKind.Unspecified),
+                            ExternLink = "https://b-rock.org/project/the-listeners-academy-2/",
+                            IsDeleted = false,
+                            Location = "University of Bonn, Aula",
+                            PerformedBy = "Alexander Melnikov & B'Rock",
+                            Price = 50.5,
+                            Title = "The Listeners Academy",
+                            UniqueURL = "The-Listeners-Academy.jpg"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            City = "Berlin",
+                            Country = "DE",
+                            DateAndTime = new DateTime(2023, 9, 10, 11, 0, 0, 0, DateTimeKind.Unspecified),
+                            ExternLink = "https://b-rock.org/project/the-listeners-academy-2/",
+                            IsDeleted = false,
+                            Location = "University of Bonn, Aula",
+                            PerformedBy = "Alexander Melnikov & B'Rock",
+                            Price = 30.5,
+                            Title = "The Listeners Academy",
+                            UniqueURL = "The-Listeners-Academy.jpg"
                         });
                 });
 

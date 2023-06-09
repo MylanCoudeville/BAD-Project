@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mJX0PIE5salmLNn6wRtpbY0MUBlGRYglCnk7MgsyYPw=",
+  "Hash": "1fT2m9fhv5ftgUEmc0CnxECitp/YV0pyhoRyxIxcPPY=",
   "Source": "B-Rock",
   "BasePath": "_content/B-Rock",
   "Mode": "Default",
@@ -1683,12 +1683,12 @@
       "OriginalItemSpec": "wwwroot\\img\\BackgroundImageArtists.jpg"
     },
     {
-      "Identity": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\LifeAndDeath_202c.jpg",
+      "Identity": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\Life-And-Death.jpg",
       "SourceId": "B-Rock",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\",
       "BasePath": "_content/B-Rock",
-      "RelativePath": "img/Concerts/LifeAndDeath_202c.jpg",
+      "RelativePath": "img/Concerts/Life-And-Death.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1697,24 +1697,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\Concerts\\LifeAndDeath_202c.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\LifeAndDeath_489e.jpg",
-      "SourceId": "B-Rock",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\",
-      "BasePath": "_content/B-Rock",
-      "RelativePath": "img/Concerts/LifeAndDeath_489e.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\Concerts\\LifeAndDeath_489e.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\Concerts\\Life-And-Death.jpg"
     },
     {
       "Identity": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\Mozart-Mass.jpg",
@@ -1749,6 +1732,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Concerts\\Tears-Of-Melancholy.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\The-Listeners-Academy.jpg",
+      "SourceId": "B-Rock",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\",
+      "BasePath": "_content/B-Rock",
+      "RelativePath": "img/Concerts/The-Listeners-Academy.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Concerts\\The-Listeners-Academy.jpg"
     },
     {
       "Identity": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\The-Travels-Of-Monteverdi.jpg",
