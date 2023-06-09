@@ -1,7 +1,10 @@
-﻿namespace B_Rock.Data
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace B_Rock.Data
 {
     public class Question
     {
+        [Key]
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

@@ -3,8 +3,6 @@ using B_Rock.Models.Calendar;
 using B_Rock.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Drawing;
 
 namespace B_Rock.Controllers
 {
@@ -32,7 +30,8 @@ namespace B_Rock.Controllers
         public IActionResult DetailConcert(int id)
         {
             Concert concert = _concertService.GetById(id);
-            DetailConcertViewModel viewModel = new DetailConcertViewModel() {
+            DetailConcertViewModel viewModel = new DetailConcertViewModel()
+            {
                 Id = concert.Id,
                 Title = concert.Title,
                 PerformedBy = concert.PerformedBy,
