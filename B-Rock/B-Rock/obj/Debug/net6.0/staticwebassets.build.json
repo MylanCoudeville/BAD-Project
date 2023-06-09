@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1fT2m9fhv5ftgUEmc0CnxECitp/YV0pyhoRyxIxcPPY=",
+  "Hash": "xNyFouK7tPqLGhS5MEcihhCLpt5gYS3yDzaytBqZ4EM=",
   "Source": "B-Rock",
   "BasePath": "_content/B-Rock",
   "Mode": "Default",
@@ -1681,6 +1681,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\BackgroundImageArtists.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\GeneralArtist_cd6f.jpg",
+      "SourceId": "B-Rock",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\",
+      "BasePath": "_content/B-Rock",
+      "RelativePath": "img/Concerts/GeneralArtist_cd6f.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Concerts\\GeneralArtist_cd6f.jpg"
     },
     {
       "Identity": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Concerts\\Life-And-Death.jpg",
