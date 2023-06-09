@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jFgb4eqqX1UAYYwhzhI0bHktJfdIMQcutCx7zd9nomw=",
+  "Hash": "mJX0PIE5salmLNn6wRtpbY0MUBlGRYglCnk7MgsyYPw=",
   "Source": "B-Rock",
   "BasePath": "_content/B-Rock",
   "Mode": "Default",
@@ -1970,6 +1970,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Staff\\Laurent-Langlois.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Mylan-Coudeville_095c.jpg",
+      "SourceId": "B-Rock",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\",
+      "BasePath": "_content/B-Rock",
+      "RelativePath": "img/Staff/Mylan-Coudeville_095c.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Staff\\Mylan-Coudeville_095c.jpg"
     },
     {
       "Identity": "C:\\Users\\Mylan\\BAD\\BAD-Project\\B-Rock\\B-Rock\\wwwroot\\img\\Staff\\Sharon-Buffel.jpg",
