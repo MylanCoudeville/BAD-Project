@@ -1,8 +1,13 @@
-﻿@model IEnumerable<B_Rock.Data.Concert>
+﻿@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService authService
+@model IEnumerable<B_Rock.Data.Concert>
 
-<div class="d-flex justify-content-center">
-    <a class="btn btn-primary" asp-action="AddConcert" asp-controller="Calendar">New Concert</a>
-</div>
+@if ((await authService.AuthorizeAsync(User, Model, "AdminOnly")).Succeeded)
+{
+    <div class="d-flex justify-content-center">
+        <a class="btn btn-primary" asp-action="AddConcert" asp-controller="Calendar">New Concert</a>
+    </div>
+}
 <div class="d-flex flex-wrap justify-content-center">
     @foreach (B_Rock.Data.Concert concert in Model)
     {
@@ -19,13 +24,20 @@
             </ul>
             <div class="card-body">
                 <p>
-                    <a asp-action="DetailConcert" asp-controller="Calendar" asp-route-id="@concert.Id" class="card-link btn btn-success">Add to card</a>
+                    @if (!(await authService.AuthorizeAsync(User, Model, "AdminOnly")).Succeeded)
+                    {
+                        <a asp-action="DetailConcert" asp-controller="Calendar" asp-route-id="@concert.Id" class="card-link btn btn-success">Add to card</a>
+                    }
+
                     <a href="@concert.ExternLink" class="card-link btn btn-link">Concert link</a>
                 </p>
-                <a class="btn btn-primary" asp-action="EditConcert" asp-controller="Calendar" asp-route-id="@concert.Id">Edit</a>
-                <form class="d-inline" asp-action="Index" asp-controller="Calendar" asp-route-id="@concert.Id">
-                    <input type="submit" value="Delete" class="btn btn-danger" />
-                </form>
+                @if ((await authService.AuthorizeAsync(User, Model, "AdminOnly")).Succeeded)
+                {
+                    <a class="btn btn-primary" asp-action="EditConcert" asp-controller="Calendar" asp-route-id="@concert.Id">Edit</a>
+                    <form class="d-inline" asp-action="Index" asp-controller="Calendar" asp-route-id="@concert.Id">
+                        <input type="submit" value="Delete" class="btn btn-danger" />
+                    </form>
+                }
             </div>
         </div>
     }

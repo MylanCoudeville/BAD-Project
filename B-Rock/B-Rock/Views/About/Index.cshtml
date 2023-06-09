@@ -1,11 +1,19 @@
-﻿@model B_Rock.Models.About.GetAllDevidedInGroup
+﻿@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService authService
+@model B_Rock.Models.About.GetAllDevidedInGroup
 <div class="backgroundImageGroup"></div>
 <h2>Information Orchestra</h2>
 <p>Our orchestra is a unity. Each musician brings something to our identity, together with their instrument. That identity is also based on a shared artistic vision and management.</p>
 <p>Take a look at our musicians, ordered by instrument.</p>
 <h3>Musicians</h3>
 
-<a class="btn btn-primary" asp-action="AddArtist" asp-controller="About">New Artist</a>
+@if ((await authService.AuthorizeAsync(User, Model.artistsInGroups, "AdminOnly")).Succeeded)
+{
+    <div class="d-flex justify-content-center">
+        <a class="btn btn-primary" asp-action="AddArtist" asp-controller="About">New Artist</a>
+    </div>
+}
+
 
 @for (int i = 0; i < Model.artistsInGroups.Count; i++)
 {
@@ -31,13 +39,16 @@
                             {
                                 <p class="card-text">@item.Role</p>
                             }
-                            <div class="d-flex justify-content-around align-self-end">
-                                @*<a asp-controller="Book" asp-action="DetailBook" asp-route-id="book.Id">Details</a>*@
-                                <a class="btn btn-primary" asp-action="EditArtist" asp-controller="About" asp-route-id="@item.Id">Edit</a>
-                                <form class="d-inline" asp-action="Index" asp-controller="About" asp-route-id="@item.Id">
-                                    <input type="submit" value="Remove" class="btn btn-danger" />
-                                </form>
-                            </div>
+                            @if ((await authService.AuthorizeAsync(User, item, "AdminOnly")).Succeeded)
+                            {
+                                <div class="d-flex justify-content-around align-self-end">
+                                    <a class="btn btn-primary" asp-action="EditArtist" asp-controller="About" asp-route-id="@item.Id">Edit</a>
+                                    <form class="d-inline" asp-action="Index" asp-controller="About" asp-route-id="@item.Id">
+                                        <input type="submit" value="Remove" class="btn btn-danger" />
+                                    </form>
+
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>

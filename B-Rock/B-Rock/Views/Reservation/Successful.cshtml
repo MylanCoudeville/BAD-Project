@@ -1,4 +1,11 @@
-﻿<h2>Order Confirmed</h2>
+﻿@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService authService
+
+<h2>Order Confirmed</h2>
 <div class="alert alert-success" role="alert">
-    Your tickets has been confirmed. We have send the tickets to your email!
+    <p>Your tickets has been confirmed. We have send the tickets to your email!</p>
+    @if ((await authService.AuthorizeAsync(User, Model, "Customer")).Succeeded)
+    {
+        <p>To see the overview of tickets you have bought, go to <a class="btn btn-link" asp-action="Overview" asp-controller="Reservation">the overview</a></p>
+    }
 </div>

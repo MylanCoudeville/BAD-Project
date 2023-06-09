@@ -97,7 +97,6 @@ namespace B_Rock.Controllers
                 if (HttpContext.User.Identity.IsAuthenticated)
                 {
                     newTicket.UserId = viewModel.UserId;
-                    //TODO: ga naar overzicht tickets!
                 }
                 _ticketService.AddTicket(newTicket);
                 return RedirectToAction("Successful");

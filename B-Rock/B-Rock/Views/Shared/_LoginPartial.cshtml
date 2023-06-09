@@ -1,5 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using B_Rock.Data
+@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService authService
 @inject SignInManager<B_RockUser> SignInManager
 @inject UserManager<B_RockUser> UserManager
 
@@ -15,12 +17,18 @@
                 <li>
                     <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@User.Identity?.Name</a>
                 </li>
-                <li>
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Reservation" asp-action="Overview">Overview tickets</a>
-                </li>
-                <li>
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Question" asp-action="Index">Overview questions</a>
-                </li>
+                @if ((await authService.AuthorizeAsync(User, Model, "Customer")).Succeeded)
+                {
+                    <li>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Reservation" asp-action="Overview">Overview tickets</a>
+                    </li>
+                }
+                @if ((await authService.AuthorizeAsync(User, Model, "AdminOnly")).Succeeded)
+                {
+                    <li>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Question" asp-action="Index">Overview questions</a>
+                    </li>
+                }
             </ul>
         </li>
         <li class="nav-item">

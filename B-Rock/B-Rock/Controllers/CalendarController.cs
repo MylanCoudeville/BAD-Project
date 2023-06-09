@@ -28,6 +28,7 @@ namespace B_Rock.Controllers
         {
             return View();
         }
+        [AllowAnonymous]
         public IActionResult DetailConcert(int id)
         {
             Concert concert = _concertService.GetById(id);
