@@ -19,6 +19,7 @@ namespace B_Rock.Controllers
             return View(questions);
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Index(int id)
         {
             Question q = _questionService.GetById(id);
